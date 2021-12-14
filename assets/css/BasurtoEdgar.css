@@ -7,5 +7,9 @@
 header {
     color: white;
     background-color: black;
-    align-items: center;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
 }
