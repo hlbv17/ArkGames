@@ -8,7 +8,8 @@ h1{
 
 .contenedor{
     float: left;
-    width: 60%;
+    width: 70%;
+    margin-left: 5%;
 }
 
 .previa_noticia{
@@ -24,6 +25,6 @@ h1{
 
 aside{
     float: left;
-    width: 40%;
+    width: 20%;
     margin: 0%;
 }
