@@ -1,10 +1,29 @@
+.pagina{
+    width: 100%;
+}
+
+h1{
+    margin-left: 4%;
+}
+
+.contenedor{
+    float: left;
+    width: 60%;
+}
+
 .previa_noticia{
-    width: 50%;
+    width: 70%;
     margin: 4%;
-    border:orange 2px solid;
     padding: 2%;
+    border-radius: 20px;
+    background-color: #1C1C1C;
+    color: white;
+    /*background: rgb(205,97,89);
+    background: linear-gradient(90deg, rgba(205,97,89,1) 0%, rgba(162,132,71,1) 51%, rgba(131,85,156,1) 100%);*/
 }
 
 aside{
-    
+    float: left;
+    width: 40%;
+    margin: 0%;
 }
