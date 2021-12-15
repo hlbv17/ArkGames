@@ -10,7 +10,7 @@ header
 {
     width:100%; 
     display:table; 
-    background-color:#000000; 
+    background-color:#1C1C1C; 
     margin-bottom:50px;
 }
 
@@ -37,10 +37,9 @@ section
     float:left; 
     font-size:24px; 
     text-transform:uppercase; 
-    
     font-weight:600; 
     padding:20px 0px;
-    width: 50px;
+    height: 50px;
 }
 
 /* Menú Cabecera*/
@@ -60,24 +59,27 @@ nav ul
 nav ul li
 {
     float:left;
+    margin: 10px 0;
 }
 nav ul li a
 {
     color:#e7e7e7; 
     font-size:18px; 
-    padding: 25px 20px; 
+    padding: 20px 10px; 
+    margin: 0 10px;
     display:inline-block; 
     transition: all 0.5s ease 0s;
 }
 nav ul li a:hover
 {
-    background-color:#4983f0; 
-    color:#e600d2; 
+    background-color:#945AAF; 
+    color:white; 
+    border-radius: 10px;
     transition: all 0.5s ease 0s;
 }
 nav ul li a:hover img
 {
-    color:#e600d2; 
+    color:white; 
     transition: all 0.5s ease 0s;
 }
 nav ul li a img
@@ -107,7 +109,7 @@ nav ul li a img
 footer
 {
     display:table; 
-    background-color:#000000; 
+    background-color:#1C1C1C; 
     padding:20px; 
     width:100%; 
 }
@@ -129,8 +131,8 @@ footer
 }
 .footer_social li a:hover
 {
-    background-color:#4983f0; 
-    color:#e600d2; 
+    background-color:#945AAF; 
+    color:white; 
     transition: all 0.5s ease 0s;
 }
 /*******************************************/
