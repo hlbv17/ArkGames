@@ -24,7 +24,7 @@ body
     padding:0px; 
     font-family: 'Open Sans', sans-serif;
     background: rgb(43,61,81);
-background: linear-gradient(0deg, rgba(43,61,81,1) 0%, rgba(70,140,130,1) 47%, rgba(43,61,81,1) 100%);
+    background: linear-gradient(0deg, rgba(43,61,81,1) 0%, rgba(70,140,130,1) 47%, rgba(43,61,81,1) 100%);
 }
 
 section
