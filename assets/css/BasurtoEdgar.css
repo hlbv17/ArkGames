@@ -4,12 +4,39 @@
     margin: 0%;
 }
 
-header {
-    color: white;
-    background-color: black;
-    width: 100%;
+.contenedor {
+    overflow: hidden;
+    margin-top: 20px;
 }
 
-h1 {
-    text-align: center;
+article{
+	background: white;
+	float: left;
+	min-height: 500px;
+	padding: 20px;
+	text-align: justify;
+	width: 70%;
+}
+
+
+.bloque-derecha{
+	background: white;
+	margin-top: 20px;
+	float: right;
+	width: 290px;
+}
+
+.bloque-derecha .titulo{
+	background: #1d1d1d;
+	color: white;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	width: 100%;
+}
+
+
+.bloque-derecha section{
+	height: 250px;
+	width: 100%;
 }
