@@ -2,10 +2,6 @@
     width: 100%;
 }
 
-h1{
-    margin-left: 4%;
-}
-
 .contenedor{
     float: left;
     width: 70%;
@@ -26,5 +22,6 @@ h1{
 aside{
     float: left;
     width: 20%;
-    margin: 0%;
+    margin-left: 20px;
+    margin-top: 60px;
 }
