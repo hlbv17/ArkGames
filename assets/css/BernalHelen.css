@@ -1,15 +1,13 @@
-.pagina{
-    width: 100%;
-}
-
 .contenedor{
     float: left;
-    width: 70%;
-    margin-left: 5%;
+    width: 50%;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .previa_noticia{
-    width: 70%;
+    width: 100%;
+    height: 225px;
     margin: 4%;
     padding: 2%;
     border-radius: 20px;
@@ -21,7 +19,26 @@
 
 aside{
     float: left;
-    width: 20%;
+    width: 10%;
     margin-left: 20px;
     margin-top: 60px;
+}
+
+.image_notice{
+    width: 40%;
+    height: 200px;
+    float: left;
+    margin: 10px;
+}
+
+.bloque_texto_noticia{
+    width: 50%;
+    float: left;
+    margin: 10px;
+    text-align: justify;
+    
+}
+
+p{
+    font-size: 14px;
 }
