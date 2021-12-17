@@ -1,0 +1,63 @@
+.contenedor{
+    float: left;
+    width: 70%;
+    margin-left: 5%;
+}
+
+h1{
+    color:white;
+    font-weight: bolder;
+    font-size: 38px;
+}
+
+h2{
+    color:black;
+    font-weight: bolder;
+    font-size: 26px;
+}
+
+p{
+    text-align: center;
+    width: 25%;
+    height: 60px;
+    border: solid 2px lightblue;
+    margin-right: 15px;
+    float: left;
+    padding: 20px;
+    margin-bottom: 10px
+}
+
+article{
+    background: white;
+    float: left;
+    min-height: 500px;
+    padding: 20px;
+    text-align: justify;
+    width: 92%;
+}
+
+.busqueda{
+    width: 70%;
+    margin: 4%;
+    padding: 2%;
+    border-radius: 20px;
+    background-color: #1C1C1C;
+    color: white;
+}
+
+
+.barra{
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+
+.menu{ 
+    border: 2px lightblue; 
+    padding: 4px; /*espacio entre el contenido y el borde*/ 
+
+}
+
+.campo_busqueda{
+    padding: 15px 350px;
+}
+
