@@ -23,9 +23,8 @@ body
     margin:0px; 
     padding:0px; 
     /*font-family: 'Open Sans', sans-serif;*/
-    /*background: rgb(96,204,199);
-    background: linear-gradient(0deg, rgba(96,204,199,1) 0%, rgba(95,171,166,1) 100%);
-*/
+    background-color: rgb(96,204,199);
+    background-color: linear-gradient(0deg, rgba(96,204,199,1) 0%, rgba(95,171,166,1) 100%);
     background-image: url("../img/fondo_joystick.png");
 }
 
@@ -117,7 +116,7 @@ footer
 {
     display:table; 
     background-color:#1C1C1C; 
-    padding:20px; 
+    padding-top:20px; 
     width:100%; 
 }
 .footer_social
