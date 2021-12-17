@@ -105,8 +105,9 @@ nav ul li a img
 }
 .footer_icon{
     filter:  invert(80%);
-    padding:10px; 
+    padding:20px; 
     height: 20px; 
+    padding: 6px;
 }
 /*******************************************/
 
@@ -116,42 +117,58 @@ footer
 {
     display:table; 
     background-color:#1C1C1C; 
-    padding-top:20px; 
+    color: white;
+    padding-top:10px; 
+    padding-bottom:10px; 
     width:100%; 
 }
 .footer_social
 {
-    margin:0px auto; 
-    display:table; 
-    display:table;
+    display:table;  
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .footer_social li
 {
     float:left; 
+    width: 50px;
+    height: 50px;
     padding:0px 10px;
 }
 .footer_social li a
-{
-    color:#e7e7e7; 
+{ 
+    padding: 5px;
     transition: all 0.5s ease 0s;
+    display: table;
+    width: 40px;
+    height: 40px;
 }
 .footer_social li a:hover
 {
-    background-color:#945AAF; 
-    color:white; 
-    transition: all 0.5s ease 0s;
+   background-color:#1d1d1d;  
+    border-radius: 3px;
+    transition: all 0.5s ease 0s; 
+}
+ 
+address{
+    text-align: center;
+}
+#derechos_reserv{
+    text-align: center;
+    font-style: italic;
 }
 /*******************************************/
+ 
 
-
-
-
+/*
 input[type=checkbox], label{display:none;}
 
 .content{display:table; margin-bottom:60px; width:900px;}
 .content h2{font-size:18px; font-weight:500; color:#002e5b; border-bottom:1px solid #fde428; display:table; padding-bottom:10px; margin-bottom:10px;}
 .content p{font-size:14px; line-height:22px; color:#7c7c7c; text-align:justify;}
-
+*/
 
 
  
