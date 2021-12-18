@@ -9,6 +9,13 @@
     outline:none;
 }
 
+.container{
+    width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 1000px;
+}
+
 header
 {
     width:100%; 
