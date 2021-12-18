@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap');
 
 * {
-    font-family: 'Source Sans 3', sans-serif;
-    text-decoration:none; 
-    list-style:none; 
-    margin:0px; 
-    padding:0px; 
-    outline:none;
+	font-family: 'Source Sans 3', sans-serif;
+	text-decoration: none;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	outline: none;
+	height: auto;
 }
 
 .container{
