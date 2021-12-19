@@ -5,25 +5,130 @@
 }
 
 .contenedor {
-    overflow: hidden;
+	overflow: hidden;
     margin-top: 20px;
 }
 
-article{
+.title {
+	color: white;
+	font-size: 30px;
+	padding-left: 10%;
+	padding-bottom: 20px;
+	display: block;
+
+}
+
+.cuadricula {
+	height: 400px;
 	background: white;
+	box-shadow: 0 0 7px #111;
+	padding: 10px;
+	border-radius: 20px;
+	
+
+}
+
+.top{
 	float: left;
-	min-height: 500px;
-	padding: 20px;
-	text-align: justify;
 	width: 70%;
+	margin: auto;
+}
+
+.bloque-izq {
+	float: left;
+	width: 80%;
+	text-align: center;
+	margin: auto;
 }
 
 
-.bloque-derecha{
-	background: white;
-	margin-top: 20px;
+.cuadricula-juegos{
+	float: left;
+	padding: 30px;
+	border-radius: 20px;
+
+	
+	background: rgba(255, 255, 255, 0.6);
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 30px 60px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+	margin: 0px auto;
+}
+
+.informacion{
+    height: 55px;
+    width: 100%;
+
+}
+
+.informacion h2{
+    text-align: center;
+    color: #333;
+    
+}
+.informacion p{
+    text-align: center;
+    color: #555;
+}
+
+.box-precio{
+    width: 80px;
+	float: left;
+}
+ .precio1{
+    color: red;
+	text-decoration: line-through;
+    font-size: .8em;
+}
+.precio .precio2{
+    font-size: 1.5em;
+}
+
+.img-cuadricula {
+	border-radius: 20px;
+	height: 300px;
+	width: 200px;
+	max-width: 100%;
+
+}
+
+
+.imagen-card {
+	margin: auto;
+	display: block;
+}
+
+
+.footer-box{
+	float: left;
+	height:50px;
+    width: 85%;
+    margin: auto;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.a-icon-buy{
 	float: right;
-	width: 290px;
+}
+.icon-buy{
+	height: 40px;
+	color: brown;
+}
+
+.bloque-derecha{
+	background: rgba(255, 255, 255, 0.8);
+	margin-top: 20px;
+	float: left;
+	width: 18%;
+	margin: auto;
+	border-radius: 20px;
+
 }
 
 .bloque-derecha .titulo{
@@ -33,6 +138,7 @@ article{
 	line-height: 50px;
 	text-align: center;
 	width: 100%;
+	border-radius: 20px;
 }
 
 
