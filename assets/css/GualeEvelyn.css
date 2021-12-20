@@ -8,3 +8,32 @@
     border-radius: 20px;
     box-shadow: 1px 7px 25px -6px rgb(0, 0, 6);
 }
+
+.items{
+    margin-left: 40px;
+    
+}
+
+.contenido{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#bttsuscribir{
+    
+    margin: -20px -50px; 
+    position:relative;
+    top:50%; 
+    left:50%;
+
+}
+
+#bttsuscribir:hover{
+    background-color: darkorange;
+  color: white;
+}
+    
+.encabezado{
+    padding-top: 15px;
+    background-color: darkorange;
+}

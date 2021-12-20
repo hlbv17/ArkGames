@@ -8,9 +8,19 @@
         <link rel="stylesheet" href="assets/css/GualeEvelyn.css"/>       
         <link rel="shortcut icon" href="logo.svg">
         <title>Contactos</title>
-        <Style>
+        <style>
+            button{
+                background-color: #f9C438;
+                padding: 10xp;
+                border: 2px solid hsla(27, 94%, 60%, 0.774);
+                width: 100px;
+                height: 35px;
+                text-align: center;
+                margin:auto;
+
+            }
             
-        </Style>
+        </style>
     </head>
     <body>
         <header>
@@ -30,36 +40,42 @@
         <div >
             <!--  CONTENIDO -->  
             <section class="contenedorContacto">
-                <h1 style="text-align: center">CONTÁCTO </h1><br>
+                <div class="encabezado">
+                    <h1 style="text-align: center">CONTÁCTO </h1><br>
+                </div>          
                 <hr><br>
-                <h3>Regístrese para recibir el boletín más extraordinario conocido por ArkGames!</h3><br>
+                <div class="contenido" >
+                    <h3>Regístrese para recibir el boletín más extraordinario conocido por ArkGames!</h3><br>
                 
-                <div>
+                    <div class="items">
+                        <br>
+                        <p> &#10142; Creditos exclusivos en los juegos <strong>Gratis </strong> todos los meses.</p>
+                        <p> &#128562;¡ Sorteos de nuevos juegos !</p>
+                        <p> &#9993;  Detalles sobre las últimas actualizaciones y artículos del juego.</p>
+                        <p> &#129331; Ultimas noticias de ArkGames. </p><br>
+                    </div>
                     <br>
-
-                    <p>Creditos exclusivos en los juegos <strong>Gratis </strong> todos los meses.</p>
-                    <p>¡ Sorteos de nuevos juegos !</p>
-                    <p>Detalles sobre las últimas actualizaciones y artículos del juego.</p>
-                    <p>Ultimas noticias de ArkGames. </p><br>
-                </div>
-                <br>
-                <div>
-                   <!---<h4>Dirección de correo electrónico </h4> --> 
                     <div>
-                        <label for="email">Dirección de correo electrónico</label> <br>                      
-                        <input type="email" autocapitalize="off" id="email" name="email" size="28"><br><br>                     
-                    </div>
-                   
-                     <p>¿Desea suscribirse al boletin de ArkGames? </p>
-                    <div>
-                        <input type="checkbox" name="boletin" id="boletin">
-                        <label for="boletin"> ¡Sí, por favor!</label>
-                    </div>
+                    <!---<h4>Dirección de correo electrónico </h4> --> 
+                        <div>
+                            <label for="email">Dirección de correo electrónico</label> <br>                      
+                            <input type="email" autocapitalize="off" id="email" name="email" size="90"><br><br>                     
+                        </div>
                     
+                        <p>¿Desea suscribirse al boletin de ArkGames? </p>
+                        <div>
+                            <input type="checkbox" name="boletin" id="boletin">
+                            <label for="boletin"> ¡Sí, por favor!</label>
+                        </div>
+                        
+                    </div>
+
+
                 </div>
-                <div>
+                
+                <div >
                     <br>
-                    <button type="button" onclick="alert('Subscripcion realizada')"> Suscribirme </button>
+                    <button id="bttsuscribir" type="button" onclick="alert('Subscripcion realizada')"> Suscribirme </button>
                     <br>
                 </div>      
             </section>   
@@ -74,8 +90,10 @@
             <li><a href="https://plus.google.com/" target="_blank"><img src="assets/img/google.svg" alt="Google" class="footer_icon"></a></li>
             <li><a href="https://www.instagram.com/" target="_blank"><img src="assets/img/instagram.svg" alt="Instagram" class="footer_icon"></a></li>
         </ul>
-        
+        <address>Guayaquil, Ecuador </address>
+        <p id="derechos_reserv">Derechos Reservados &copy; 2021-2022</p>
     </footer>
+
     </body>
     
 </html>
