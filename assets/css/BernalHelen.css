@@ -1,3 +1,7 @@
+html {
+  min-width: 500px;
+}
+
 h1 {
   /*margin-left: 20px;*/
   margin-top: 30px;
@@ -10,8 +14,8 @@ body {
 
 h3 {
   font-size: 1.2em;
-  margin-bottom: 90px;
-  margin-top: 30px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 #titulo_categoria {
@@ -29,22 +33,25 @@ address {
 
 .noticias {
   display: grid;
-  grid-template-columns: 70% 30%;
-  grid-template-rows: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, auto);
+  margin-left: 50px;
+  grid-template-areas:
+    "previa_noticia previa_noticia aside"
+    "footer footer footer";
 }
 
 .contenedor {
-  display: grid;
-  grid-template-columns: 90%;
-  grid-template-rows: 5% 22.5% 22.5% 22.5% 22.5%;
-  padding-left: 50px;
+  grid-area: previa_noticia;
+  /*padding-left: 50px;*/
 }
 
 .previa_noticia {
   width: 75%;
   display: grid;
-  grid-template-columns: 40% 60%;
-  grid-template-rows: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, auto);
+  grid-template-areas: "img texto texto";
   margin: 20px;
   padding: 20px;
   border-radius: 20px;
@@ -76,10 +83,20 @@ address {
   color: darkorange;
 }
 
+aside {
+  grid-area: aside;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(8, auto);
+  grid-template-areas:
+    "suscribe"
+    "categorias";
+}
+
 #aside_categorias {
+  grid-area: categorias;
   width: 30%;
   height: 200px;
-  margin-top: 100px;
   padding: 70px;
   padding-bottom: 170px;
   border-radius: 20px;
@@ -88,14 +105,15 @@ address {
 }
 
 #aside_suscribe {
+  grid-area: suscribe;
   position: relative;
   width: 30%;
   height: 50px;
-  margin: 20px 0 0 0;
+  margin: 100px 0 0px 0;
   padding: 20px 70px 20px 70px;
   border-radius: 20px;
   box-shadow: 0px 10px 10px -6px black;
-  background-color: #1c1c1c;
+  background-color: #de9cf0;
 }
 
 #aside_suscribe p {
@@ -114,16 +132,16 @@ address {
 }
 
 #suscribete:hover {
-  color: aquamarine;
+  color: rgb(180, 66, 66);
   font-weight: bold;
 }
 
 #suscribete:visited {
-  color: red;
+  color: rgb(3, 3, 3);
 }
 
 #suscribete:active {
-  color: violet;
+  color: rgb(65, 56, 65);
 }
 
 #suscribete:link {
@@ -131,18 +149,17 @@ address {
 }
 
 .image_notice {
-  width: 100%;
-  height: 80%;
+  max-width: 100%;
+  max-height: 80%;
   box-shadow: 0px 10px 10px -6px black;
   margin-top: 20px;
+  grid-area: img;
 }
 
 .bloque_texto_noticia {
   margin-left: 20px;
-  display: grid;
-  grid-template-rows: 30% 70%;
-  grid-template-columns: 100%;
   text-align: justify;
+  grid-area: texto;
 }
 
 p {
@@ -153,4 +170,39 @@ p {
 #derechos_reserv {
   text-align: center;
   font-style: italic;
+}
+
+footer {
+  grid-area: footer;
+}
+
+@media screen and (max-width: 800px) {
+  .noticias {
+    grid-template-areas:
+      "previa_noticia previa_noticia previa_noticia"
+      "aside aside aside"
+      "footer footer footer";
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .previa_noticia {
+    grid-template-areas:
+      "img img img"
+      "texto texto texto";
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #aside_categorias {
+    width: 65%;
+    height: 200px;
+    padding-bottom: 80px;
+    margin-bottom: 50px;
+  }
+
+  #aside_suscribe {
+    width: 65%;
+    margin-bottom: 80px;
+  }
 }
