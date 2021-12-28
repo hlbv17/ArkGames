@@ -26,10 +26,10 @@ address {
   text-align: center;
 }
 
-.box {
+/*.box {
   height: 100%;
   width: 100%;
-}
+}*/
 
 .noticias {
   display: grid;
@@ -174,6 +174,18 @@ p {
 
 footer {
   grid-area: footer;
+}
+
+@media screen and (max-width: 950px) {
+  header {
+    position: relative;
+  }
+  body {
+    margin: 0px 0px 0px 0px;
+  }
+  #logo_page {
+    padding: 12px 20px 10px;
+  }
 }
 
 @media screen and (max-width: 800px) {

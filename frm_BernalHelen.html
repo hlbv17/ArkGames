@@ -8,46 +8,115 @@
         <link rel="stylesheet" href="assets/css/BernalHelen.css"/>     
         <link rel="shortcut icon" href="logo.svg">
         <title>Suscripción - Noticias ArkGames</title>
+        <style>
+            .contenedor_frm{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                grid-template-rows: repeat(2,auto);
+                grid-template-areas: 
+                "frm frm frm"
+                "footer footer footer";
+            }
+            .suscripcion{
+                background-color: gray;
+                margin: 20px;
+                padding: 10px;
+                grid-column: 2/3;
+            }
+            .grupo_datos{
+                padding: 20px;
+                display: block;
+            }
+
+            #btnListo{
+                width: 100px;
+                height: 30px;
+            }
+        </style>
     </head>
     <body>
         <!-------------------------------------------------MENU---------------------------------------->
-        <header>
-            <img  src="assets/img/logo-icon-text.svg" id="logo_page" alt="ArkGames"/> 
+        <header id="menu">
+            <img  src="assets/img/logo-icon-text.svg" id="logo_page" alt="ArkGames"/>   
+                <nav>
+                    <ul>
+                        <li><a href="index_LarreaRafael.html"><img src="assets/img/home-solid.svg" alt="Home" 
+                            class="menu_icon"> Home</a></li>
+                        <li><a href="BasurtoEdgar.html"><img src="assets/img/store-solid.svg" alt="Tienda" 
+                            class="menu_icon">Tienda</a></li>
+                        <li><a href="BernalHelen.html"><img src="assets/img/newspaper-solid.svg" alt="Noticias" 
+                            class="menu_icon">Noticias</a></li>
+                        <li><a href="EspinozaIvan.html"><img src="assets/img/tools-solid.svg" alt="Soporte" 
+                            class="menu_icon">Soporte</a></li> 
+                        <li><a href="GualeEvelyn.html"><img src="assets/img/id-badge-solid.svg" alt="Contacto" 
+                            class="menu_icon">Contacto</a></li>
+                    </ul>
+                </nav>
         </header>
-        <div class="suscripcion">
-            <section class="box_suscripcion">
-                <h1>Últimas noticias de ArkGames</h1>
-                <!------------------------NOTICIA 1----------------------------------->
-                <div class="previa_noticia">
-                    <img class="image_notice" src="assets/img/noticia1.jpg" alt="Ultimos juegos"/>
-                    <div class="bloque_texto_noticia">
-                        <h3>Próximos lanzamientos y últimos juegos</h3>
-                        <p><time datetime="2021-12-14">14-12-2021</time> /PS3, PSP, PC<br>¿Quieres saber cuáles son los próximos y últimos lanzamientos en videojuegos este año? 
-                            Aquí encontrarás el calendario con las fechas de lanzamiento de todos los juegos de las 
-                            diferentes plataformas actualizadas día a día.<br><a class="ver_mas" href="#">Ver más &rarr;</a></p>
-                            
-                        </div>
-                </div>
-            </section>
+        <div class="contenedor_frm">
+            <div class="suscripcion">
+                <form class="box_suscripcion">
+                    <div class="grupo_datos">
+                        <p>Correo electrónico: <br> 
+                            <input type="email" name="correo" size="30"></p>
+                    </div>
+                    <div class="grupo_datos">
+                        <p>Tipo de correo que deseo leer:<br>
+                            <input type="checkbox" name="casilla1"> Novedades <br>
+                            <input type="checkbox" name="casilla2"> Eventos <br>
+                            <input type="checkbox" name="casilla2"> Descuentos <br>
+                            <input type="checkbox" name="casilla3"> Torneos <br>
+                            <input type="checkbox" name="casilla4"> Análisis <br>
+                            <input type="checkbox" name="casilla5"> Trucos <br>
+                        </p>
+                    </div>
+                    <div class="grupo_datos">
+                        <p>Sección: <br>
+                            <input type="checkbox" name="casilla1"> PC <br>
+                            <input type="checkbox" name="casilla2"> PS2 - PS3 - PS4 - PS5 <br>
+                            <input type="checkbox" name="casilla3"> XBox <br>
+                            <input type="checkbox" name="casilla4"> Wii <br>
+                            <input type="checkbox" name="casilla5"> Android <br>
+                        </p>
+                    </div>
+                    <div class="grupo_datos">
+                        <p>¿Cada cuánto desea recibir nuestros correos? <br>
+                            <input type="radio" name="diario" value="d">Diario <br>
+                            <input type="radio" name="semanal" value="s">Semanal(Las noticias más detacadas, todos los sábados)<br>
+                        </p>
+                    </div>
+                    <div class="grupo_datos">
+                        <p>¿Desea unirse a nuestro servidor de Discord? <br>
+                            <input type="radio" name="discord1" value="s">Sí <br>
+                            <input type="radio" name="discord0" value="n">No <br>
+                        </p>
+                    </div>
+                    <div class="grupo_datos">
+                        <p>
+                            <input id="btnListo" type="submit" value="Listo">
+                        </p>
+                    </div>
+                </form>
+            </div>
+                <!---------------------------FOOTER------------------------------------------>
+            <footer class="footer_frm">
+                <ul class="footer_social">
+                    <li><a href="https://twitter.com/" target="_blank"><img src="assets/img/twitter.svg" 
+                        alt="Twitter" class="footer_icon"></a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank"><img src="assets/img/facebook.svg" 
+                        alt="Facebook" class="footer_icon"></a></li>
+                    <li><a href="https://www.linkedin.com/" target="_blank"><img src="assets/img/linkedin.svg" 
+                        alt="LinkedIn" class="footer_icon"></a></li>
+                    <li><a href="https://www.pinterest.com/" target="_blank"><img src="assets/img/pinterest.svg" 
+                        alt="Pinterest" class="footer_icon"></a></li>
+                    <li><a href="https://plus.google.com/" target="_blank"><img src="assets/img/google.svg" 
+                        alt="Google" class="footer_icon"></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><img src="assets/img/instagram.svg" 
+                        alt="Instagram" class="footer_icon"></a></li>
+                </ul>
+                <address>Guayaquil, Ecuador </address>
+                <p id="derechos_reserv">Derechos Reservados &copy; 2021-2022</p>
+            <footer>
         </div>
-            <!---------------------------FOOTER------------------------------------------>
-        <footer>
-            <ul class="footer_social">
-                <li><a href="https://twitter.com/" target="_blank"><img src="assets/img/twitter.svg" 
-                    alt="Twitter" class="footer_icon"></a></li>
-                <li><a href="https://www.facebook.com/" target="_blank"><img src="assets/img/facebook.svg" 
-                    alt="Facebook" class="footer_icon"></a></li>
-                <li><a href="https://www.linkedin.com/" target="_blank"><img src="assets/img/linkedin.svg" 
-                    alt="LinkedIn" class="footer_icon"></a></li>
-                <li><a href="https://www.pinterest.com/" target="_blank"><img src="assets/img/pinterest.svg" 
-                    alt="Pinterest" class="footer_icon"></a></li>
-                <li><a href="https://plus.google.com/" target="_blank"><img src="assets/img/google.svg" 
-                    alt="Google" class="footer_icon"></a></li>
-                <li><a href="https://www.instagram.com/" target="_blank"><img src="assets/img/instagram.svg" 
-                    alt="Instagram" class="footer_icon"></a></li>
-            </ul>
-            <address>Guayaquil, Ecuador </address>
-            <p id="derechos_reserv">Derechos Reservados &copy; 2021-2022</p>
-        <footer>
     </body>
 </html>
