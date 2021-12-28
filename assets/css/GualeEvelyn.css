@@ -1,18 +1,76 @@
-.contenedorContacto{
-    width: auto;
-    height: auto;
-    margin: 4%;
-    padding: 2%;
-    margin: auto;
-    background: #fff;
-    border-radius: 20px;
-    box-shadow: 1px 7px 25px -6px rgb(0, 0, 6);
-}
-
-.items{
-    margin-left: 40px;
+#contenedor{
+    display: flex;
+    flex-direction:row;
+    align-items:flex-start;
+    flex-wrap: wrap;
+    background: honeydew;    
+    margin: 20px;
+    padding-left: 20px;
+    padding-right: 20px;    
     
 }
+
+@media screen and (max-width:600px) {
+    #box {
+        flex: 100%;
+        max-width: 100%;
+        
+    }
+  }
+
+.bloque_titulo{
+    border: 3px solid gray;
+    background-color: darkgray;
+    width: 80%; 
+    height: 80%; 
+    margin: 8px;
+    flex-grow: 10; 
+    flex:100%;
+    
+}
+
+.bloque_items{
+    background-color: darkgray;
+    margin: 8px;
+    width: 25%;
+    height: 80%;    
+    padding: 20px;
+    flex-grow: 5; 
+
+}
+
+
+.bloque_direccion{
+    background-color: darkgray;
+    margin: 8px;
+    width: 10%;
+    height: 80%;
+    padding: 20px; 
+    flex-grow: 3;
+    overflow:auto;
+}
+
+@media screen and (max-width: 600px) {
+    .bloque_titulo{
+      width: 100%;
+      overflow: auto;
+    }
+}
+
+.contacto_titulo{   
+    font-size: 22px;
+    font-weight: bolder;
+
+}
+
+.contacto_titulo2{
+    color:teal;
+    font-size: 15px;
+    font-weight:bold;
+}
+
+/*
+
 
 .contenido{
     margin-left: 40px;
@@ -28,13 +86,10 @@
 
 }
 
-#bttsuscribir:hover{
-    background-color: darkorange;
-  color: white;
-}
-    
+   
 .encabezado{
     padding-top: 15px;
     background-color: darkorange;
 
 }
+*/
