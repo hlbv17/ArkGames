@@ -1,30 +1,78 @@
+html {
+  min-width: 500px;
+}
+
+h1 {
+  /*margin-left: 20px;*/
+  margin-top: 30px;
+  font-size: 1.5em;
+}
+
+body {
+  color: white;
+}
+
+h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#titulo_categoria {
+  margin-bottom: 20px;
+}
+
+address {
+  text-align: center;
+}
+
+/*.box {
+  height: 100%;
+  width: 100%;
+}*/
+
+.noticias {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, auto);
+  margin-left: 50px;
+  grid-template-areas:
+    "previa_noticia previa_noticia aside"
+    "footer footer footer";
+}
+
 .contenedor {
-  float: left;
-  width: 50%;
-  margin-left: 100px;
-  margin-right: 100px;
+  grid-area: previa_noticia;
+  /*padding-left: 50px;*/
 }
 
 .previa_noticia {
-  width: 100%;
-  height: 230px;
-  margin: 4%;
-  padding: 2%;
+  width: 75%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, auto);
+  grid-template-areas: "img texto texto";
+  margin: 20px;
+  padding: 20px;
   border-radius: 20px;
   background-color: #1c1c1c;
-  /*background: rgb(187,187,185);
-    background: linear-gradient(0deg, rgba(187,187,185,1) 0%, rgba(34,34,29,1) 47%, rgba(0,0,0,1) 98%);;
-    */
   color: white;
   box-shadow: 0px 10px 10px -6px black;
-  /*background: rgb(205,97,89);
-    background: linear-gradient(90deg, rgba(205,97,89,1) 0%, rgba(162,132,71,1) 51%, rgba(131,85,156,1) 100%);*/
+}
+
+.ver_mas {
+  font-weight: bold;
+  padding-top: 15px;
 }
 
 .ver_mas:visited {
   color: cadetblue;
 }
 .ver_mas:hover {
+  color: darkorange;
+}
+
+.ver_mas:active {
   color: darkorange;
 }
 
@@ -36,45 +84,137 @@
 }
 
 aside {
-  float: left;
-  width: 10%;
+  grid-area: aside;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(8, auto);
+  grid-template-areas:
+    "suscribe"
+    "categorias";
+}
+
+#aside_categorias {
+  grid-area: categorias;
+  width: 30%;
   height: 200px;
-  margin-left: 90px;
-  margin-top: 60px;
   padding: 70px;
   padding-bottom: 170px;
   border-radius: 20px;
   box-shadow: 0px 10px 10px -6px black;
   background-color: #1c1c1c;
-  /*background: rgb(242,192,24);
-    background: linear-gradient(0deg, rgba(242,192,24,1) 0%, rgba(170,172,132,1) 100%);
-*/
 }
 
-blockquote {
-  padding: 5px;
+#aside_suscribe {
+  grid-area: suscribe;
+  position: relative;
+  width: 30%;
+  height: 50px;
+  margin: 100px 0 0px 0;
+  padding: 20px 70px 20px 70px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 10px -6px black;
+  background-color: #de9cf0;
+}
+
+#aside_suscribe p {
+  text-align: center;
+  font-size: 1.1em;
+}
+
+#aside_suscribe a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 20px;
+  width: 100%;
+  height: 80%;
+  z-index: 10;
+}
+
+#suscribete:hover {
+  color: rgb(180, 66, 66);
+  font-weight: bold;
+}
+
+#suscribete:visited {
+  color: rgb(3, 3, 3);
+}
+
+#suscribete:active {
+  color: rgb(65, 56, 65);
+}
+
+#suscribete:link {
+  color: yellow;
 }
 
 .image_notice {
-  width: 40%;
-  height: 200px;
-  float: left;
-  margin: 10px;
+  max-width: 100%;
+  max-height: 80%;
   box-shadow: 0px 10px 10px -6px black;
+  margin-top: 20px;
+  grid-area: img;
 }
 
 .bloque_texto_noticia {
-  width: 50%;
-  float: left;
-  margin: 10px;
+  margin-left: 20px;
   text-align: justify;
+  grid-area: texto;
 }
 
 p {
-  font-size: 14px;
+  width: 100%;
+  font-size: 0.9em;
 }
 
 #derechos_reserv {
   text-align: center;
   font-style: italic;
+}
+
+footer {
+  grid-area: footer;
+}
+
+@media screen and (max-width: 950px) {
+  header {
+    position: relative;
+  }
+  body {
+    margin: 0px 0px 0px 0px;
+  }
+  #logo_page {
+    padding: 12px 20px 10px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .noticias {
+    grid-template-areas:
+      "previa_noticia previa_noticia previa_noticia"
+      "aside aside aside"
+      "footer footer footer";
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .previa_noticia {
+    grid-template-areas:
+      "img img img"
+      "texto texto texto";
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #aside_categorias {
+    width: 65%;
+    height: 200px;
+    padding-bottom: 80px;
+    margin-bottom: 50px;
+  }
+
+  #aside_suscribe {
+    width: 65%;
+    margin-bottom: 80px;
+  }
 }
