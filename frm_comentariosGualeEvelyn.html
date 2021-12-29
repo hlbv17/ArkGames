@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Página para contactos ArkGames" />       
+        <meta name="keywords" content="videojuegos,catalogo,juegos,comentario" /> 
+        <link rel="stylesheet" href="assets/css/master.css" /> 
+        <link rel="stylesheet" href="assets/css/GualeEvelyn.css"/> 
+        <link rel="shortcut icon" href="logo.svg"/>
+        <title>Comentarios - ArkGames</title>
+
+        <style>
+            #frm_comentarios{
+                display: flex;
+                flex-direction:column;               
+                width: 400px;
+                background: darkgray;
+                padding: 15px;
+                margin: auto;
+                margin-top: 100px;
+                margin-bottom: 20px;
+                border-radius: 4px;
+                color: white;
+                font-size:large;
+                box-shadow: 7px 13px 37px #000;
+            }
+
+            .frm_campos{
+                padding: 10px;
+            }
+
+            .controls{
+                width: 1px;
+                margin-left: 4px;
+                padding-right: 5px;
+            }
+
+            .controls_2{
+                width: 60%;
+                padding: 4px;
+                border-radius: 3px;
+                margin-bottom: 13px;
+                margin-left: 2px;            
+                               
+            }
+
+            #frm_comentarios .botn{
+                width: 100%;
+                background: darkslategray;
+                padding: 12px;
+                color: white;
+                font-size: 16px;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <!-------------------------------------------------MENU---------------------------------------->
+        <header id="menu">
+            <img  src="assets/img/logo-icon-text.svg" id="logo_page" alt="ArkGames"/>   
+                <nav>
+                    <ul>
+                        <li><a href="index_LarreaRafael.html"><img src="assets/img/home-solid.svg" alt="Home" 
+                            class="menu_icon"> Home</a></li>
+                        <li><a href="BasurtoEdgar.html"><img src="assets/img/store-solid.svg" alt="Tienda" 
+                            class="menu_icon">Tienda</a></li>
+                        <li><a href="BernalHelen.html"><img src="assets/img/newspaper-solid.svg" alt="Noticias" 
+                            class="menu_icon">Noticias</a></li>
+                        <li><a href="EspinozaIvan.html"><img src="assets/img/tools-solid.svg" alt="Soporte" 
+                            class="menu_icon">Soporte</a></li> 
+                        <li><a href="GualeEvelyn.html"><img src="assets/img/id-badge-solid.svg" alt="Contacto" 
+                            class="menu_icon">Contacto</a></li>
+                    </ul>
+                </nav>
+        </header>
+        <div>
+            <div id="frm_comentarios">
+                <form action="">
+                    <fieldset>
+
+                        <legend style="color:darkslategray; font-weight: bold;">TU OPINION CUENTA!</legend> 
+
+                        <p class="frm_campos" style="text-align: center; font-size: 26px">Ayudanos a seguir mejorando. </p>
+
+                        <div class="frm_campos">
+
+                            <div >
+                                <label  class="controls" for="nombre">Nombre: </label>
+                                <input class="controls_2" type="text" id="nombre">
+                            </div>
+
+                            <div>
+                                <label class="controls" for="apellido">Apellido: </label>
+                                <input class="controls_2" type="text" id="apellido">
+                            </div>
+                                                        
+                            <div>
+                                <label class="controls" for="phone">Telefono: </label>
+                                <input class="controls_2" type="tel" id="phone" placeholder="099-999-9999">
+                            </div>
+                            
+                            <div>
+                                <label class="controls" for="ciudades">Ciudad: </label>
+                                <select class="controls_2" name="" id="ciudades">                        
+                                    <option value="Guayaquil">Guayaquil</option>
+                                    <option value="Quito">Quito</option>
+                                    <option value="Portiviejo">Portiviejo</option>
+                                    <option value="Loja">Loja</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label class="controls" for="correo">Correo Electronico: </label>
+                                <input class="controls_2" type="email" id="correo">
+                            </div>
+                            
+                            <div>
+                                <label class="controls" for="asunto">Asunto: </label>
+                                <input class="controls_2" type="text" id="asunto"><br>
+
+                                <textarea  name="mensaje" placeholder="Escriba aqui su opinion" id="" cols="60" rows="10"></textarea>
+                            </div>
+                            
+                            <div>
+                                <input class="botn" type="button" value="ENVIAR">
+                            </div>
+                            
+
+                        </div>
+
+                        
+                        
+                    </fieldset>
+                    
+
+                </form>
+            </div>
+           
+        </div>
+        <!---------------------------FOOTER------------------------------------------>
+        <footer>
+            <ul class="footer_social">
+                <li><a href="https://twitter.com/" target="_blank"><img src="assets/img/twitter.svg" alt="Twitter" class="footer_icon"></a></li>
+                <li><a href="https://www.facebook.com/" target="_blank"><img src="assets/img/facebook.svg" alt="Facebook" class="footer_icon"></a></li>
+                <li><a href="https://www.linkedin.com/" target="_blank"><img src="assets/img/linkedin.svg" alt="LinkedIn" class="footer_icon"></a></li>
+                <li><a href="https://www.pinterest.com/" target="_blank"><img src="assets/img/pinterest.svg" alt="Pinterest" class="footer_icon"></a></li>
+                <li><a href="https://plus.google.com/" target="_blank"><img src="assets/img/google.svg" alt="Google" class="footer_icon"></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><img src="assets/img/instagram.svg" alt="Instagram" class="footer_icon"></a></li>
+            </ul>
+            <address>Guayaquil, Ecuador </address>
+            <p id="derechos_reserv">Derechos Reservados &copy; 2021-2022</p>
+        </footer>
+
+        
+    </body>
+</html>
