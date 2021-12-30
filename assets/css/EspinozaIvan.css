@@ -16,16 +16,6 @@ h2{
     font-size: 26px;
 }
 
-p{
-    text-align: center;
-    width: 25%;
-    height: 70px;
-    border: solid 2px lightblue;
-    margin-right: 20px;
-    float: left;
-    padding: 20px;
-    margin-bottom: 10px
-}
 
 aside{
     float: left;
@@ -64,13 +54,8 @@ article{
     margin-bottom: 10px;
 }
 
-.menu{ 
-    border: 2px lightblue; 
-    padding: 4px; /*espacio entre el contenido y el borde*/ 
-
-}
-
 .campo_busqueda{
     padding: 15px 350px;
 }
+
 

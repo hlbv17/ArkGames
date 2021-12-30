@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="Soporte" />        
+        <meta name="keywords" content="videojuegos,catalogo,juegos" /> 
+        <link rel="stylesheet" href="assets/css/master.css" />      
+        <link rel="shortcut icon" href="logo.svg">
+        <link rel="stylesheet" href="assets/css/EspinozaIvan.css"/>       
+        <title>Soporte - ArkGames</title>
+        <style>
+            #frm_soporte{
+                display: flex;
+                flex-direction:column;               
+                width: 400px;
+                background: darkgray;
+                padding: 15px;
+                margin: auto;
+                margin-top: 100px;
+                margin-bottom: 20px;
+                border-radius: 4px;
+                color: white;
+                font-size:large;
+                box-shadow: 7px 13px 37px #000;
+            }
+
+            .frm_campos{
+                padding: 10px;
+            }
+
+            .controls{
+                width: 1px;
+                margin-left: 4px;
+                padding-right: 5px;
+            }
+
+            .controls_2{
+                width: 60%;
+                padding: 4px;
+                border-radius: 3px;
+                margin-bottom: 13px;
+                margin-left: 2px;            
+                               
+            }
+
+            .boton{
+                width: 100%;
+                background: black;
+                padding: 12px;
+                color: white;
+                font-size: 16px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-------------------------------------------------MENU---------------------------------------->
+        <header id="menu">
+            <img  src="assets/img/logo-icon-text.svg" id="logo_page" alt="ArkGames"/>   
+                <nav>
+                    <ul>
+                        <li><a href="index_LarreaRafael.html"><img src="assets/img/home-solid.svg" alt="Home" 
+                            class="menu_icon"> Home</a></li>
+                        <li><a href="BasurtoEdgar.html"><img src="assets/img/store-solid.svg" alt="Tienda" 
+                            class="menu_icon">Tienda</a></li>
+                        <li><a href="BernalHelen.html"><img src="assets/img/newspaper-solid.svg" alt="Noticias" 
+                            class="menu_icon">Noticias</a></li>
+                        <li><a href="EspinozaIvan.html"><img src="assets/img/tools-solid.svg" alt="Soporte" 
+                            class="menu_icon">Soporte</a></li> 
+                        <li><a href="GualeEvelyn.html"><img src="assets/img/id-badge-solid.svg" alt="Contacto" 
+                            class="menu_icon">Contacto</a></li>
+                    </ul>
+                </nav>
+        </header>
+        <!------------------------------------------------------------------------------------------>
+        <div>
+            <div id="frm_soporte">
+                <form>
+                    <fieldset>
+                        <legend style="color:darkslategray; font-weight: bold;">¡Estamos aquí para ayudarte!</legend>
+                        <div>
+                            <input class="boton" type="button" value="Inicie sesión en su cuenta de ArkGames">
+                        </div>
+                        <p class="frm_campos" style="text-align: center; font-size: 24px">Obtén ayuda de Soporte Técnico de ArkGames</p>
+
+                        <div class="frm_campos">
+
+                            <div>
+                                <p>Usuario:</p>
+                                <input class="controls_2" type="text" id="usuario">
+                            </div>
+
+                            <div>
+                                <p>E-mail:</p>
+                                <input class="controls_2" type="text" id="e-mail">
+                            </div>
+                                                        
+                            <div>
+                                <p>Número de teléfono</p>
+                                <input class="controls_2" type="tel" id="phone" placeholder="099-999-9999">
+                            </div>
+                            
+                            <div>
+                                <p>Servicios:</p>
+                                <select class="controls_2"  id="servicios">                        
+                                    <option value="Cuentas">Cuentas</option>
+                                    <option value="Pagos">Pagos</option>
+                                    <option value="Creadores">Creadores</option>
+                                    <option value="Comppatibilidad">Compatibilidad</option>
+                                    <option value="Otros">Otros</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <p>Producto:</p>
+                                <select class="controls_2"  id="juegos">                        
+                                    <option value="Apex Legends">Apex Legends</option>
+                                    <option value="Genshin Impact">Genshin Impact</option>
+                                    <option value="Fall Guys">Fall Guys</option>
+                                    <option value="Fortnite">Fortnite</option>
+                                    <option value="Otros">Otros</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <p>Describa su problema:</p>
+                                <textarea  name="mensaje" placeholder="Escriba aqui su solicitud de soporte"  cols="60" rows="10"></textarea>
+                            </div>
+                            
+                            <div>
+                                <input class="boton" type="button" value="ENVIAR">
+                            </div>
+                            
+                        </div> 
+                        
+                    </fieldset>
+                    
+                </form>
+                
+            </div>
+            
+        </div>
+        <!---------------------------FOOTER------------------------------------------>
+        <footer>
+            <ul class="footer_social">
+                <li><a href="https://twitter.com/" target="_blank"><img src="assets/img/twitter.svg" alt="Twitter" class="footer_icon"></a></li>
+                <li><a href="https://www.facebook.com/" target="_blank"><img src="assets/img/facebook.svg" alt="Facebook" class="footer_icon"></a></li>
+                <li><a href="https://www.linkedin.com/" target="_blank"><img src="assets/img/linkedin.svg" alt="LinkedIn" class="footer_icon"></a></li>
+                <li><a href="https://www.pinterest.com/" target="_blank"><img src="assets/img/pinterest.svg" alt="Pinterest" class="footer_icon"></a></li>
+                <li><a href="https://plus.google.com/" target="_blank"><img src="assets/img/google.svg" alt="Google" class="footer_icon"></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><img src="assets/img/instagram.svg" alt="Instagram" class="footer_icon"></a></li>
+            </ul>
+            <address>Guayaquil, Ecuador </address>
+            <p id="derechos_reserv">Derechos Reservados &copy; 2021-2022</p>
+        </footer>
+    </body>  
+</html>
