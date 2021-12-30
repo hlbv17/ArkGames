@@ -302,6 +302,19 @@ form .contenido {
 	color: #2B3D51;
 }
 
+
+.radio-form{
+    margin-top: 10px;
+    margin-left: 0px;
+	margin-right: 0px;
+    text-align: right;
+	padding: 4px 0px;
+    width: 90%;
+    display:block;
+	letter-spacing: 0.05em;
+	color: white; 
+}
+
 /*box para ingreso*/
 .ingreso-item {
 	box-sizing: border-box;
@@ -333,11 +346,19 @@ input[id="txt-ingreso"] {
   width: 250px;
 	box-sizing: border-box;
 }
- 
+input[id="email-ingreso"] {
+  width: 250px;
+	box-sizing: border-box;
+}
+#lst-ingreso {
+   width: 250px;
+	box-sizing: border-box;
+}
 input:focus {
   transform: translateX(-2px);
   border-radius: 5px;
 }
+
 #eye_visibilidad {
   background: #fff;
   color: #333;

@@ -41,15 +41,28 @@
       <h2>Log In</h2>
       <p>Ingresa usando tu usuario y contraseña</p>
       <p>&nbsp;</p>
-      <p>&nbsp;</p>
    </header>
    <br>
-   <div  >
+   <div   >
+	    <span class="ingreso-item">
+           <i class="fa fa-globe"></i>
+         </span>
+	   <input list="regiones" placeholder="Seleccione región"  class="form-ingreso" id="lst-ingreso" required>
+  <datalist id="regiones">
+    <option value="E.E.U.U. - California">
+	<option value="E.E.U.U. - Miami">
+	<option value="America del Sur">
+    <option value="Europa - Oriente">
+    <option value="Europa - Occidente">
+    <option value="Asia -  Central">
+    <option value="Otros">
+  </datalist> 
+	   <br/>
          <span class="ingreso-item">
            <i class="fa fa-user-circle"></i>
          </span>
          <input class="form-ingreso" id="txt-ingreso" type="text" placeholder="@UserName" required>
-      <br>
+      <br/>
       <span class="ingreso-item">
         <i class="fa fa-key"></i>
        </span>
@@ -58,14 +71,14 @@
      <span>
         <i class="fa fa-eye" aria-hidden="true"  type="button" id="eye_visibilidad"></i>
      </span>
-     
-     
-      <br> 
+	   <div class="radio-form">	       
+	      Acepta el uso de cookies.<input type="checkbox"   name="ok_cookies"><br/>Recordar sesión?.<input type="checkbox"  name="ok_cookies">
+	   </div>
       <button class="log-in"> Ingresar </button>
    </div>
-   
+  
    <div class="other"> 
-      <button class="btn submits frgt-pass">Olvido la contraseña?</button> 
+      <button class="btn submits frgt-pass">Olvidó la contraseña?</button> 
       <button class="btn submits sign-up">Registrarse
       <i class="fa fa-user-plus" aria-hidden="true"></i>
       </button> 
