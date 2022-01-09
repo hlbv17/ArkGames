@@ -85,16 +85,12 @@ address {
 
 aside {
   grid-area: aside;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(8, auto);
-  grid-template-areas:
-    "suscribe"
-    "categorias";
+  display: flex;
+  flex-direction: column;
 }
 
 #aside_categorias {
-  grid-area: categorias;
+  margin-top: 20px;
   width: 30%;
   height: 200px;
   padding: 70px;
@@ -105,7 +101,6 @@ aside {
 }
 
 #aside_suscribe {
-  grid-area: suscribe;
   position: relative;
   width: 30%;
   height: 50px;
@@ -150,6 +145,70 @@ aside {
 
 #suscribete:link {
   color: yellow;
+}
+
+#aside_slider {
+  margin-top: 20px;
+  display: flex;
+  width: 60%;
+  height: 30px;
+  padding: 20px 20px 140px 20px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 10px -6px black;
+  background-color: rgb(28, 28, 28);
+  overflow: hidden;
+  position: relative;
+}
+
+#container_slider {
+  width: 100%;
+  height: 150px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider {
+  display: flex;
+  width: 600%;
+  height: 150px;
+  margin: 0;
+}
+
+.slider_section {
+  width: 100%;
+}
+
+.slider_iframe {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.slider_btn {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: rgba(28, 28, 28, 0.7);
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 25px;
+  font-weight: bold;
+  font-family: monospace;
+  text-align: center;
+  cursor: pointer;
+}
+
+.slider_btn:hover {
+  background: #fff;
+}
+
+.slider_btn--right {
+  right: 0;
+}
+
+.slider_btn--left {
+  left: 0;
 }
 
 .image_notice {
