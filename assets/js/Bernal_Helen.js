@@ -1,8 +1,34 @@
-/*BOTON PARA DIRIGIRSE ARRIBA DE LA PAGINA*/
+/*VARIABLES PARA BOTON ARRIBA*/
 let btnArriba = document.getElementById("flecha_arriba");
-btnArriba.style.visibility = 'hidden';
 document.addEventListener("scroll", scroll);
 
+/*VARIABLES PARA SLIDER DE ANUNCIO*/
+const slider = document.querySelector("#slider");
+let sliderSection = document.querySelectorAll(".slider_section");
+let sliderSectionLast = sliderSection[sliderSection.length-1];
+const btnLeft = document.querySelector("#btn-left");
+const btnRight = document.querySelector("#btn-right");
+slider.insertAdjacentElement('afterbegin', sliderSectionLast);
+
+/*VARIABLES PARA NOTICIA DESTACADA*/
+var clic = 1;
+function mostrarBloque() {
+    var contenido = document.getElementById("juego_destacado");
+    var aside_destacado = document.getElementById("aside_nuevo");
+    if(clic==1){
+        contenido.style.visibility = 'visible';
+        aside_destacado.style.height="300px";
+        clic = clic + 1;
+     
+    } else{
+        contenido.style.visibility = 'hidden';
+        aside_destacado.style.height="20px";
+        clic = 1;
+    }   
+    
+}
+
+/*BOTON PARA DIRIGIRSE ARRIBA DE LA PAGINA*/
 function scroll(){
     var pagina = document.querySelector("html");
     var x = pagina.scrollTop;
@@ -19,16 +45,7 @@ btnArriba.addEventListener("click", function() {
 });
 
 
-/*CONTROL DE GALERIA DE VIDEO*/
-const slider = document.querySelector("#slider");
-let sliderSection = document.querySelectorAll(".slider_section");
-let sliderSectionLast = sliderSection[sliderSection.length-1];
-
-const btnLeft = document.querySelector("#btn-left");
-const btnRight = document.querySelector("#btn-right");
-
-slider.insertAdjacentElement('afterbegin', sliderSectionLast);
-
+/*CONTROL DE SLIDER ANUNCIO*/
 function Next(){
     let sliderSectionFirst = document.querySelectorAll(".slider_section")[0];
     slider.style.marginLeft="-200%";

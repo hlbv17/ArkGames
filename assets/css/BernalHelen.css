@@ -59,22 +59,14 @@ address {
 .ver_mas {
   font-weight: bold;
   padding-top: 15px;
-}
-
-.ver_mas:visited {
   color: cadetblue;
 }
-.ver_mas:hover {
-  color: darkorange;
-}
 
-.ver_mas:active {
-  color: darkorange;
-}
-
+.ver_mas:visited,
 .temas_aside:visited {
   color: cadetblue;
 }
+.ver_mas:hover,
 .temas_aside:hover {
   color: darkorange;
 }
@@ -186,8 +178,19 @@ aside {
   left: 0;
 }
 
-.image_notice,
-.carta_categoria {
+#aside_nuevo {
+  position: relative;
+  width: 45%;
+  height: 300px;
+  padding: 20px 40px 20px 40px;
+  margin-bottom: 20px;
+}
+
+#juego_destacado {
+  width: 100%;
+}
+
+.image_notice {
   max-width: 100%;
   max-height: 80%;
   box-shadow: 0px 10px 10px -6px black;
@@ -195,20 +198,10 @@ aside {
   grid-area: img;
 }
 
-/*.image_notice:hover,
-.image_notice:focus {
-  box-shadow: inset 6.5em 0 0 0 var(--hover);
-}*/
-
 .bloque_texto_noticia {
   margin-left: 20px;
   text-align: justify;
   grid-area: texto;
-}
-
-p {
-  width: 100%;
-  font-size: 0.9em;
 }
 
 #flecha_arriba {
@@ -218,6 +211,7 @@ p {
   bottom: 20px;
   right: 20px;
   z-index: 2;
+  visibility: hidden;
 }
 
 #flecha_arriba:hover,
