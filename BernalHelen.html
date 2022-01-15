@@ -6,7 +6,7 @@
         <meta name="keywords" content="videojuegos,noticias,novedades" /> 
         <link rel="stylesheet" href="assets/css/master.css" /> 
         <link rel="stylesheet" href="assets/css/BernalHelen.css"/>     
-        <link rel="shortcut icon" href="logo.svg">
+        <link rel="shortcut icon" href="assets/img/logo.svg">
         <title>Noticias - ArkGames</title>
     </head>
     <body>
@@ -28,12 +28,15 @@
                     </ul>
                 </nav>
         </header>
+        <img id="flecha_arriba" src="assets/img/flecha_arriba.svg" alt="flecha"/>
         <div class="noticias">
             <section class="contenedor">
                 <h1>Últimas noticias de ArkGames</h1>
                 <!------------------------NOTICIA 1----------------------------------->
                 <div class="previa_noticia">
-                    <img class="image_notice" src="assets/img/noticia1.jpg" alt="Ultimos juegos"/>
+                    <figure class="carta_categoria">
+                        <img class="image_notice" src="assets/img/noticia1.jpg" alt="Ultimos juegos"/>
+                    </figure>
                     <div class="bloque_texto_noticia">
                         <h3>Próximos lanzamientos y últimos juegos</h3>
                         <p><time datetime="2021-12-14">14-12-2021</time> /PS3, PSP, PC<br>¿Quieres saber cuáles son los próximos y últimos lanzamientos en videojuegos este año? 
@@ -44,7 +47,9 @@
                 </div>
                     <!------------------------NOTICIA 2----------------------------------->
                 <div class="previa_noticia">
-                    <img class="image_notice" src="assets/img/noticia2.jpg" alt="PS5 novedades"/>
+                    <figure class="carta_categoria">
+                        <img class="image_notice" src="assets/img/noticia2.jpg" alt="PS5 novedades"/>
+                    </figure>
                     <div class="bloque_texto_noticia">
                         <h3>Un vistazo a las características de la versión para PS5</h3>
                         <p><time datetime="2021-12-02">02-12-2021</time> /PS3, PSP, PC<br>
@@ -57,7 +62,9 @@
                 </div>
                 <!------------------------NOTICIA 3----------------------------------->
                 <div class="previa_noticia">
-                   <img class="image_notice" src="assets/img/noticia3.jpg" alt="Fortnite navideño"/>
+                   <figure class="carta_categoria">
+                       <img class="image_notice" src="assets/img/noticia3.jpg" alt="Fortnite navideño"/>
+                   </figure>
                     <div class="bloque_texto_noticia">
                         <h3>Disfruta de las fiestas en Fornite</h3>
                         <p><time datetime="2021-11-29">29-11-2021</time> /PS3, PSP, PC<br>
@@ -70,7 +77,9 @@
                 </div>
                 <!------------------------NOTICIA 4----------------------------------->
                 <div class="previa_noticia">
-                    <img class="image_notice" src="assets/img/noticia4.jpg" alt="Genshin Impact sin gacha"/>
+                    <figure class="carta_categoria">
+                        <img class="image_notice" src="assets/img/noticia4.jpg" alt="Genshin Impact sin gacha"/>
+                    </figure>
                     <div class="bloque_texto_noticia">
                         <h3>Novedades de la nueva versión de Genshin Impact</h3>
                         <p><time datetime="2021-11-28">28-11-2021</time> /PS3, PSP, PC<br>Los jugadores de Genshin Impact pronto 
@@ -82,10 +91,10 @@
                 </div>
             </section>  
             <aside>
-                <div id="aside_suscribe">
+                <div id="aside_suscribe" class="aside_componente">
                     <p><a id="suscribete" href="frm_BernalHelen.html">Suscríbete para más noticias<br>AQUÍ </a></p>
                 </div>
-                <div id="aside_categorias">
+                <div id="aside_categorias" class="aside_componente">
                     <h3 id="titulo_categoria">Categorías</h3>
                     <div class="lista_categorias">
                         <ul>
@@ -101,30 +110,21 @@
                         </ul>
                     </div>
                 </div>
-                <div id="aside_slider">
-                    <div id="container_slider">
+                <div id="aside_slider" class="aside_componente">
+                    <div id="container_slider" >
                         <div class="slider" id="slider">
                             <div class="slider_section">
-                                <iframe class="slider_iframe" width="100" height="80" src="https://www.youtube.com/embed/ZK9iP5PEhSU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <img class="slider_img" src="assets/img/anuncio1.svg" alt="anuncio1"/>
                             </div>
                             <div class="slider_section">
-                                <iframe class="slider_iframe" width="100" height="80" src="https://www.youtube.com/embed/ZK9iP5PEhSU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <img class="slider_img" src="assets/img/anuncio2.svg" alt="anuncio2"/>
                             </div>
                             <div class="slider_section">
-                                <iframe class="slider_iframe" width="100" height="80" src="https://www.youtube.com/embed/ZK9iP5PEhSU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                            <div class="slider_section">
-                                <iframe class="slider_iframe" width="100" height="80" src="https://www.youtube.com/embed/ZK9iP5PEhSU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                            <div class="slider_section">
-                                <iframe class="slider_iframe" width="100" height="80" src="https://www.youtube.com/embed/ZK9iP5PEhSU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                            <div class="slider_section">
-                                <iframe class="slider_iframe" width="100" height="80" src="https://www.youtube.com/embed/ZK9iP5PEhSU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <img class="slider_img" src="assets/img/anuncio3.svg" alt="anuncio3"/>
                             </div>
                         </div>
-                        <div class="slider_btn slider_btn--right">&#62;</div>
-                        <div class="slider_btn slider_btn--left">&#60;</div>
+                        <div class="slider_btn slider_btn--right" id="btn-right">&#62;</div>
+                        <div class="slider_btn slider_btn--left" id="btn-left">&#60;</div>
                     </div>
                 </div>
             </aside>
@@ -148,5 +148,6 @@
             <address>Guayaquil, Ecuador </address>
             <p id="derechos_reserv">Derechos Reservados &copy; 2021-2022</p>
         </footer>
+        <script async type="text/javascript" src="assets/js/Bernal_Helen.js"></script>  
     </body>
 </html>

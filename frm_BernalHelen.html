@@ -2,30 +2,33 @@
 <html lang="es">
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Página de noticas ArkGames"/>     
         <meta name="keywords" content="formulario,noticias,susrición" /> 
         <link rel="stylesheet" href="assets/css/master.css" /> 
-        <link rel="stylesheet" href="assets/css/BernalHelen.css"/>     
-        <link rel="shortcut icon" href="logo.svg">
+        <link rel="stylesheet" href="assets/css/BernalHelen.css"/>   
+        <link rel="shortcut icon" href="assets/img/logo.svg">
         <title>Suscripción - Noticias ArkGames</title>
         <style>
-            .contenedor_frm{
-                display: grid;
-                grid-template-columns: repeat(3,1fr);
-                grid-template-rows: repeat(2,auto);
-                grid-template-areas: 
-                "frm frm frm"
-                "footer footer footer";
+            h3{
+                margin: 20px;
             }
+
             .suscripcion{
-                background-color: gray;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 margin: 20px;
                 padding: 10px;
-                grid-column: 2/3;
             }
+            .suscripcion div{
+                width: 50%;
+                background-color: gray;
+                margin: 20px;
+            }
+
             .grupo_datos{
-                padding: 20px;
-                display: block;
+                padding: 10px;
             }
 
             #btnListo{
@@ -53,51 +56,46 @@
                     </ul>
                 </nav>
         </header>
-        <div class="contenedor_frm">
             <div class="suscripcion">
-                <form class="box_suscripcion">
+                <div>
                     <h3 style="padding-left: 10px;">Suscripción a nuestra newsletter</h3>
-                    <div class="grupo_datos">
-                        <p>Correo electrónico: <br> 
-                            <input type="email" name="correo" size="30"></p>
-                    </div>
-                    <div class="grupo_datos">
-                        <p>Tipo de correo que deseo leer:<br>
-                            <input type="checkbox" name="casilla1"> Novedades <br>
-                            <input type="checkbox" name="casilla2"> Eventos <br>
-                            <input type="checkbox" name="casilla2"> Descuentos <br>
-                            <input type="checkbox" name="casilla3"> Torneos <br>
-                            <input type="checkbox" name="casilla4"> Análisis <br>
-                            <input type="checkbox" name="casilla5"> Trucos <br>
-                        </p>
-                    </div>
-                    <div class="grupo_datos">
-                        <p>Sección: <br>
-                            <input type="checkbox" name="casilla1"> PC <br>
-                            <input type="checkbox" name="casilla2"> PS2 - PS3 - PS4 - PS5 <br>
-                            <input type="checkbox" name="casilla3"> XBox <br>
-                            <input type="checkbox" name="casilla4"> Wii <br>
-                            <input type="checkbox" name="casilla5"> Android <br>
-                        </p>
-                    </div>
-                    <div class="grupo_datos">
-                        <p>¿Cada cuánto desea recibir nuestros correos? <br>
-                            <input type="radio" name="frecuencia" value="d">Diario <br>
-                            <input type="radio" name="frecuencia" value="s">Semanal(Las noticias más detacadas, todos los sábados)<br>
-                        </p>
-                    </div>
-                    <div class="grupo_datos">
-                        <p>¿Desea unirse a nuestro servidor de Discord? <br>
-                            <input type="radio" name="discord" value="s">Sí <br>
-                            <input type="radio" name="discord" value="n">No <br>
-                        </p>
-                    </div>
-                    <div class="grupo_datos">
-                        <p>
-                            <input id="btnListo" type="submit" value="Listo">
-                        </p>
-                    </div>
-                </form>
+                    <form id="form_suscripcion">
+                        <div class="grupo_datos">
+                            <label for="email">Correo electrónico:</label><br> 
+                            <input id="email" class="formItem" type="email" name="correo" size="30"/> <br>
+                        </div>
+                        <div class="grupo_datos">
+                            <label>Tipo de correo que deseo leer:</label><br>
+                            <input class="formItem tema" type="checkbox" name="casilla1"/> Novedades <br>
+                            <input class="formItem tema" type="checkbox" name="casilla2"/> Eventos <br>
+                            <input class="formItem tema" type="checkbox" name="casilla2"/> Descuentos <br>
+                            <input class="formItem tema" type="checkbox" name="casilla3"/> Torneos <br>
+                            <input class="formItem tema" type="checkbox" name="casilla4"/> Análisis <br>
+                            <input class="formItem tema" type="checkbox" name="casilla5"/> Trucos <br>
+                        </div>
+                        <div class="grupo_datos">
+                            <label>Sección:</label> <br>
+                            <input class="formItem dispositivo" type="checkbox" name="casilla1"/> PC <br>
+                            <input class="formItem dispositivo" type="checkbox" name="casilla2"/> PS2 - PS3 - PS4 - PS5 <br>
+                            <input class="formItem dispositivo" type="checkbox" name="casilla3"/> XBox <br>
+                            <input class="formItem dispositivo" type="checkbox" name="casilla4"/> Wii <br>
+                            <input class="formItem dispositivo" type="checkbox" name="casilla5"/> Android  <br>
+                        </div>
+                        <div class="grupo_datos">
+                            <label>¿Cada cuánto desea recibir nuestros correos?</label> <br>
+                                <input class="formItem frecuencia" type="radio" name="frecuencia" value="d"/>Diario <br>
+                                <input class="formItem frecuencia" type="radio" name="frecuencia" value="s">Semanal(Las noticias más detacadas, todos los sábados)<br>
+                        </div>
+                        <div class="grupo_datos">
+                            <label>¿Desea unirse a nuestro servidor de Discord?</label> <br>
+                                <input class="formItem discord" type="radio" name="discord" value="s"/>Sí <br>
+                                <input class="formItem discord" type="radio" name="discord" value="n"/>No <br>
+                        </div>
+                        <div class="grupo_datos">
+                            <input type="submit" value="Listo"/>
+                        </div>
+                    </form>
+                </div>
             </div>
                 <!---------------------------FOOTER------------------------------------------>
             <footer class="footer_frm">
@@ -118,6 +116,6 @@
                 <address>Guayaquil, Ecuador </address>
                 <p id="derechos_reserv">Derechos Reservados &copy; 2021-2022</p>
             </footer>
-        </div>
+            <script async type="text/javascript" src="assets/js/Validacion.js"></script>  
     </body>
 </html>
