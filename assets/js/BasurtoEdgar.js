@@ -47,14 +47,14 @@ function actualizar() {
 
 function nextPage() {
     let nextPage = selectedPage++;
-    //paginas.options[nextPage];
+    paginas.value = nextPage;
     actualizar();
 };
 
 function previousPage() {
     if (selectedPage > 1) {
         let previousPage = selectedPage--;
-    //paginas.options[nextPage];
+    paginas.value = previousPage;
     actualizar();
     }
     
