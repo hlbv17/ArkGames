@@ -52,6 +52,9 @@ function validar(event) {
        event.preventDefault();  
     }
     
+}    
+
+
     function mensaje(cadenaMensaje, elemento) {
     elemento.focus();
     var nodoPadre = elemento.parentNode;
@@ -69,6 +72,6 @@ function validar(event) {
         mensajes[i].remove();// remueve o elimina un elemento de mi doc html
         }
     }    
-}
+
 
 
