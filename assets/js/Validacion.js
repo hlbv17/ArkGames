@@ -28,7 +28,6 @@ function validar(event){
    
     for (let i = 0; i < checkboxTema.length; i++) {
         if (checkboxTema[i].checked) {
-            cont++;
             sel = true;
             if (checkboxTema[i].value === '2') {
                 alert("Ha seleccionado el segundo checkbox");
@@ -38,10 +37,6 @@ function validar(event){
     }
     if (!sel) {
         resultado = false;
-        mensaje("Debe seleccionar un tema de su preferencia", checkboxTema[0]);
-    }
-    if (cont<2) {
-        resultado = false;
         mensaje("Debe seleccionar al menos un tema de su preferencia", checkboxTema[0]);
     }
     
@@ -50,7 +45,6 @@ function validar(event){
        
     for (let i = 0; i < checkboxDispositivo.length; i++) {
         if (checkboxDispositivo[i].checked) {
-            cont++;
             sel = true;
             if (checkboxDispositivo[i].value === '2') {
                 alert("Ha seleccionado el segundo checkbox");
@@ -61,10 +55,6 @@ function validar(event){
     if (!sel) {
         resultado = false;
         mensaje("Debe seleccionar un dispositivo tecnológico de su preferencia", checkboxDispositivo[0]);
-    }
-    if (cont<2) {
-        resultado = false;
-        mensaje("Debe seleccionar al menos un dispositivo de su preferencia", checkboxDispositivo[0]);
     }
     
     //validacion radio button frecuencia

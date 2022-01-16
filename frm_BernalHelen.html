@@ -20,19 +20,35 @@
                 justify-content: center;
                 margin: 20px;
                 padding: 10px;
+                width: 100%;
             }
             .suscripcion div{
+                text-align: center;
                 width: 50%;
                 background-color: gray;
-                margin: 20px;
+                margin: 10px;
+            }
+
+            #form_suscripcion{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
             }
 
             .grupo_datos{
+                align-self: center;
+                text-align: center;
                 padding: 10px;
+                width: 100%;
+            }
+
+            .grupo_datos div{
+                text-align: left;
+                width: 100%;
             }
 
             #btnListo{
-                width: 100px;
+                width: 50%;
                 height: 30px;
             }
         </style>
@@ -66,33 +82,41 @@
                         </div>
                         <div class="grupo_datos">
                             <label>Tipo de correo que deseo leer:</label><br>
-                            <input class="formItem tema" type="checkbox" name="casilla1"/> Novedades <br>
-                            <input class="formItem tema" type="checkbox" name="casilla2"/> Eventos <br>
-                            <input class="formItem tema" type="checkbox" name="casilla2"/> Descuentos <br>
-                            <input class="formItem tema" type="checkbox" name="casilla3"/> Torneos <br>
-                            <input class="formItem tema" type="checkbox" name="casilla4"/> Análisis <br>
-                            <input class="formItem tema" type="checkbox" name="casilla5"/> Trucos <br>
+                            <div>
+                                <input class="formItem tema" type="checkbox" name="casilla1"/> Novedades <br>
+                                <input class="formItem tema" type="checkbox" name="casilla2"/> Eventos <br>
+                                <input class="formItem tema" type="checkbox" name="casilla2"/> Descuentos <br>
+                                <input class="formItem tema" type="checkbox" name="casilla3"/> Torneos <br>
+                                <input class="formItem tema" type="checkbox" name="casilla4"/> Análisis <br>
+                                <input class="formItem tema" type="checkbox" name="casilla5"/> Trucos <br>
+                            </div>
                         </div>
                         <div class="grupo_datos">
                             <label>Sección:</label> <br>
-                            <input class="formItem dispositivo" type="checkbox" name="casilla1"/> PC <br>
-                            <input class="formItem dispositivo" type="checkbox" name="casilla2"/> PS2 - PS3 - PS4 - PS5 <br>
-                            <input class="formItem dispositivo" type="checkbox" name="casilla3"/> XBox <br>
-                            <input class="formItem dispositivo" type="checkbox" name="casilla4"/> Wii <br>
-                            <input class="formItem dispositivo" type="checkbox" name="casilla5"/> Android  <br>
+                            <div>
+                                <input class="formItem dispositivo" type="checkbox" name="casilla1"/> PC <br>
+                                <input class="formItem dispositivo" type="checkbox" name="casilla2"/> PS2 - PS3 - PS4 - PS5 <br>
+                                <input class="formItem dispositivo" type="checkbox" name="casilla3"/> XBox <br>
+                                <input class="formItem dispositivo" type="checkbox" name="casilla4"/> Wii <br>
+                                <input class="formItem dispositivo" type="checkbox" name="casilla5"/> Android  <br>
+                            </div>
                         </div>
                         <div class="grupo_datos">
                             <label>¿Cada cuánto desea recibir nuestros correos?</label> <br>
-                                <input class="formItem frecuencia" type="radio" name="frecuencia" value="d"/>Diario <br>
-                                <input class="formItem frecuencia" type="radio" name="frecuencia" value="s">Semanal(Las noticias más detacadas, todos los sábados)<br>
+                                <div>
+                                    <input class="formItem frecuencia" type="radio" name="frecuencia" value="d"/>Diario <br>
+                                    <input class="formItem frecuencia" type="radio" name="frecuencia" value="s">Semanal(Las noticias más detacadas, todos los sábados)<br>
+                                </div>
                         </div>
                         <div class="grupo_datos">
                             <label>¿Desea unirse a nuestro servidor de Discord?</label> <br>
-                                <input class="formItem discord" type="radio" name="discord" value="s"/>Sí <br>
-                                <input class="formItem discord" type="radio" name="discord" value="n"/>No <br>
+                                <div>
+                                    <input class="formItem discord" type="radio" name="discord" value="s"/>Sí <br>
+                                    <input class="formItem discord" type="radio" name="discord" value="n"/>No <br>
+                                </div>
                         </div>
                         <div class="grupo_datos">
-                            <input type="submit" value="Listo"/>
+                            <input id="btnListo" type="submit" value="Listo"/>
                         </div>
                     </form>
                 </div>
