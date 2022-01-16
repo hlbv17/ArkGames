@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <meta charset="utf-8" />
+        <meta charset="utf-8" />        
         <meta name="description" content="Página para contactos ArkGames" />        
         <meta name="keywords" content="videojuegos,catalogo,juegos" /> 
         <link rel="stylesheet" href="assets/css/master.css" />  
@@ -23,6 +23,7 @@
 
             #bttenviar:hover {
                 box-shadow: 5px 5px 7px 5px whitesmoke;
+                background-color: #4CAF50;
             }
            
         </style>
@@ -50,8 +51,7 @@
                     <div  class="bloque_titulo">
                         <h1 style="text-align: center">CONTÁCTOS </h1>
                     </div>
-                    
-                    
+                   
                     <div  class="bloque_items">
                         <h3>Regístrese para recibir el boletín más extraordinario conocido por ArkGames!</h3>
                         <br>
@@ -61,13 +61,24 @@
                         <p> &#129331; Ultimas noticias de ArkGames. </p><br>                  
 
                         <div>
-                            <label for="email">Ingrese su dirección de correo electrónico</label> <br>                      
-                            <input type="email" autocapitalize="off" id="email" name="email" size="45"><br><br> 
-                            <button id="bttenviar" type="button" onclick="alert('Registro Guardado')"> Enviar </button>                    
-                        </div>
+                            <label for="email">Ingrese su dirección de correo electrónico</label> <br> 
+                            <form id="formCorreo">                               
+                                <div>
+                                    <input type="email" autocapitalize="off" id="email" name="email" size="45" onkeydown="validation()">
+                                    <span id="text"></span><br><br> 
+                                </div>
+
+                                <div>                                   
+                                    <input id="bttenviar" type="submit" value="ENVIAR">
+                                </div>
+                            </form>                  
+                                         
+                        </div>                     
+    
 
                     </div>
-
+                   
+                    
                     <div  class="bloque_direccion">
 
                         <div class="blocKContacto">
@@ -102,6 +113,15 @@
                             <a id="comentario" href="frm_comentariosGualeEvelyn.html"> Enviar Comentarios... </a></div>
 
                     </div>
+
+                    
+                    
+                    <div id="map"> 
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37929.7444447131!2d-79.90299703870323!3d-2.2015795349300746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6f695445ffb1%3A0xf5bbafe3b79d59f6!2sGAME%20CITY!5e0!3m2!1ses-419!2sec!4v1642342013628!5m2!1ses-419!2sec"
+                         width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" class="mapa"></iframe>
+                    </div>
+                    
+
                 </div>
             </section>
 
@@ -121,6 +141,37 @@
         <p id="derechos_reserv">Derechos Reservados &copy; 2021-2022</p>
     </footer>
 
+   
+    <script type="text/javascript">
+    
+        function validation(){
+            var form = document.getElementById("formCorreo");
+            var email = document.getElementById("email").value;
+            var text = document.getElementById("text");
+            
+            var patter = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+        
+            if(email.match(patter)){
+                form.classList.add("valid")
+                form.classList.remove("invalid")
+                text.innerHTML= "direccion de correo valida";
+                text.style.color= "green";
+            }
+            else{
+                form.classList.remove("valid");
+                form.classList.add("invalid");
+                text.innerHTML= "direccion de correo incompleta";
+                text.style.color= "#ff0000";
+            }
+
+            if(email == ""){
+                form.classList.remove("valid")
+                form.classList.remove("invalid")
+                text.innerHTML= "";
+                text.style.color= "#00ff00";
+            }
+        }
+    </script>
     </body>
     
 </html>
