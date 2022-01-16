@@ -1,4 +1,4 @@
-var form = document.querySelector("#frmSoporte");
+var form = document.getElementById("Soporte");
 form.addEventListener('submit', validar);
 let cont=0;
 
@@ -57,6 +57,8 @@ function validar(event) {
     var nodoPadre = elemento.parentNode;
     var nodoMensaje = document.createElement("span");
     nodoMensaje.textContent = cadenaMensaje;
+    nodoMensaje.style.color = "red";
+    nodoMensaje.display = "block";
     nodoMensaje.setAttribute("class", "mensajeError");
     nodoPadre.appendChild(nodoMensaje);
     }
