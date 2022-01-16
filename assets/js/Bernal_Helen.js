@@ -24,8 +24,7 @@ function mostrarBloque() {
         contenido.style.visibility = 'hidden';
         aside_destacado.style.height="20px";
         clic = 1;
-    }   
-    
+    }      
 }
 
 /*BOTON PARA DIRIGIRSE ARRIBA DE LA PAGINA*/
