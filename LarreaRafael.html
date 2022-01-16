@@ -13,6 +13,7 @@
     <style>       		
 		main{width: 1343px; position: absolute;} 
     </style>
+	
 </head>
     <!-------------------------------------------------MENU---------------------------------------->
 <body>
@@ -32,6 +33,10 @@
 	</header>
 
     <div class="main">
+		<div class="barraflotante" onmouseover="show_popup()" >
+			<span class="popupText" id="autopopup"><h4>Juega Ya!</h4></span>
+			<a href="frm_LarreaRafael.html"><img src="assets/img/joystick.svg" width="45px" height="45px" alt="LogIn"><h4>Log In</h4></a>
+		</div>
 		<div class="div_slider" >
 			<ul class="slider">
 				<li id="slide1"><img src="assets/img/carrogaleria/fortnite1920x500.png" alt="bnn1" ></li>
@@ -39,77 +44,12 @@
 				<li id="slide3"><img src="assets/img/carrogaleria/banner1920x500.png" alt="bnn1" ></li>
 				<li id="slide4"><img src="assets/img/carrogaleria/genshin1920x500.png" alt="bnn1" ></li>
 				<li id="slide5"><img src="assets/img/carrogaleria/rocket1920x500.png" alt="bnn1" ></li>
-			</ul>  
-			
-				<!--/*comento botones por implementacion auto slide*/        -->
-			<!--
-				<ul  class="slider_menu">
-				<li><a href="#slide1"><img src="assets/img/square.svg" alt="Cuadrado"></a></li>
-				<li><a href="#slide2"><img src="assets/img/cross.svg"  alt="Cruz"></a></li>
-				<li><a href="#slide3"><img src="assets/img/joystick.svg"  alt="Mando de Juego"></a></li>
-				<li><a href="#slide4"><img src="assets/img/triangule.svg"  alt="Triangulo"></a></li>
-				<li><a href="#slide5"><img src="assets/img/circle.svg"  alt="Circulo"></a></li>
-			</ul>
-			--> 
+			</ul>  			
 		</div>  
-
-
-
-	
 <!-- Seccion Galeria -->
-
 		<section class="seccion_index" id="sec_galeria">
-			<div class="mini_inline_block">
-			  <a href="BasurtoEdgar.html" >
-			  	<img src="assets/img/Hitman3_poster.jpg"  alt="Hitman3">
-			  	<h1>Hitman 3</h1>
-			  	<h4>$2.50 c/mes</h4>
-			  </a>
-			</div>
-			<div class="mini_inline_block" >
-			  <a href="BasurtoEdgar.html"  >
-				<img src="assets/img/TheMedium_poster.webp"   alt="The Medium">
-			  	<h1>The Medium</h1>
-			  	<h4>$1.08 c/mes</h4> 
-			  </a>
-			</div>
-		  <div class="mini_inline_block"> 
-			  <a href="BasurtoEdgar.html"  > 
-				  <img src="assets/img/returnal_poster.jpeg" alt="Returnal"> 
-				  <h1>Returnal</h1>
-			  	  <h4>$3.63 c/mes</h4> 
-			  </a>
-			</div>
-			<div class="mini_inline_block"> 
-			  <a href="BasurtoEdgar.html"  > 
-				  <img src="assets/img/posters/fornite_poster.jpg" alt="Fornite"> 
-				  <h1>Fornite</h1>
-			  	  <h4 style="color: red">$1.66 c/mes</h4> 
-			  </a>
-			</div>
-			<div class="mini_inline_block"> 
-			  <a href="BasurtoEdgar.html"  > 
-			  <img src="assets/img/posters/FIFA_22_Poster.jpg" alt="Fifa 2022"> 
-				  <h1>FIFA 22</h1>
-		  	  <h4 >$2.50 c/mes</h4> 
-			  </a>
-			</div>
-			<div class="mini_inline_block"> 
-			  <a href="BasurtoEdgar.html"  > 
-				  <img src="assets/img/posters/KenaBridgeOfSpirits_poster.jpg" alt="Kena Bridge"> 
-				  <h1>Kena Bridge</h1>
-			  	  <h4 >$2.50 c/mes</h4> 
-			  </a>
-			</div>
-			<div class="mini_inline_block"> 
-			  <a href="BasurtoEdgar.html"  > 
-			  <img src="assets/img/posters/halo-infinite_poster.jpg" alt="Halo Infinite"> 
-				  <h1>Halo Infinite</h1>
-			  	  <h4 >$2.50 c/mes</h4> 
-			  </a>
-			</div>
+			<!--  Contenido generado dinamicamente      -->			
         </section>
-	
 <!-- Lanzamientos --> 
 
 		<section class="seccion_index"  id="sec_lanzamientos">  
@@ -165,4 +105,10 @@
 	</footer>
 	</body>    
 	<script src="assets/js/LarreaRafael.js"></script>
+	<script>
+		function show_popup() {
+		  var popup = document.getElementById("autopopup");
+		  popup.classList.toggle("showpopup");
+		}
+	</script>
 </html>
