@@ -49,7 +49,7 @@ function validar(event) {
     }
     
     if(!resultado){
-        event.preventDefault();  
+       event.preventDefault();  
     }
     
     function mensaje(cadenaMensaje, elemento) {
@@ -57,8 +57,8 @@ function validar(event) {
     var nodoPadre = elemento.parentNode;
     var nodoMensaje = document.createElement("span");
     nodoMensaje.textContent = cadenaMensaje;
-    nodoMensaje.style.color = "red";
-    nodoMensaje.display = "block";
+//    nodoMensaje.style.color = "red";
+//    nodoMensaje.display = "block";
     nodoMensaje.setAttribute("class", "mensajeError");
     nodoPadre.appendChild(nodoMensaje);
     }
@@ -68,7 +68,7 @@ function validar(event) {
     for (let i = 0; i < mensajes.length; i++) {
         mensajes[i].remove();// remueve o elimina un elemento de mi doc html
         }
-    }
+    }    
 }
 
 
