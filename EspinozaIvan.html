@@ -176,7 +176,14 @@
                 font-weight: bolder;
                 font-size: 26px;
             }
-
+            
+            h3{
+                color:black;
+                font-weight: bolder;
+                font-size: 26px;
+                margin-left : 15px;
+            }
+            
             .p{
                 text-align: center;
                 width: 30%;
@@ -240,7 +247,7 @@
             .campo_busqueda{
                 padding: 15px 320px;
             }        
-        </style>
+        </style>     
     </head>
     <body>
         <!-------------------------------------------------MENU---------------------------------------->
@@ -248,7 +255,7 @@
             <img src="assets/img/logo-icon-text.svg" id="logo_page" alt="ArkGames"/>   
                 <nav>
                     <ul>
-                        <li><a href="index_LarreaRafael.html"><img src="assets/img/home-solid.svg" alt="Home" 
+                        <li><a href="index.html"><img src="assets/img/home-solid.svg" alt="Home" 
                             class="menu_icon"> Home</a></li>
                         <li><a href="BasurtoEdgar.html"><img src="assets/img/store-solid.svg" alt="Tienda" 
                             class="menu_icon">Tienda</a></li>
@@ -274,58 +281,58 @@
                 <div class="row">
                     <div class="p col-3"> 
                         ¿Qué es la autenticación de dos factores y cómo se activa?<br>
-                        <a href="#"><b>Leer más &rarr;</b></a>
+                        <a onmouseover="style.color='red'" onmouseout="style.color='#0d6efd'" href="#"><b>Leer más &rarr;</b></a>
                     </div>
                     
                     <div class="p col-3">
                         <a>Cambiar correo electrónico de tu cuenta de Ark Games</a><br>
-                        <a href="#"><b>Leer más &rarr;</b></a>
+                        <a onmouseover="style.color='red'" onmouseout="style.color='#0d6efd'" href="#"><b>Leer más &rarr;</b></a>
                     </div>
                     
                     <div class="p col-3">
                         <a>¿Cómo corregir errores y problemas técnicos de Fortnite?</a><br>
-                        <a href="#"><b>Leer más &rarr;</b></a>
+                        <a onmouseover="style.color='red'" onmouseout="style.color='#0d6efd'" href="#"><b>Leer más &rarr;</b></a>
                     </div>                             
                 </div>                                 
                 <div class="row">
                     <div class="p col-3">                      
                         <a>¿Cómo vinculo una cuenta de consola a mi cuenta de Ark Games?</a><br>
-                        <a href="#"><b>Leer más &rarr;</b></a>                  
+                        <a onmouseover="style.color='red'" onmouseout="style.color='#0d6efd'" href="#"><b>Leer más &rarr;</b></a>                  
                     </div>
                     
                     <div class="p col-3">                      
                         <a>Resolución de problemas del iniciador de Ark Games</a><br>
-                        <a href="#"><b>Leer más &rarr;</b></a>                  
+                        <a onmouseover="style.color='red'" onmouseout="style.color='#0d6efd'" href="#"><b>Leer más &rarr;</b></a>                  
                     </div> 
                     
                     <div class="p col-3">                      
                         <a>¿Cómo cambiar tu nombre en pantalla de Ark Games?</a><br>
-                        <a href="#"><b>Leer más &rarr;</b></a>                  
+                        <a onmouseover="style.color='red'" onmouseout="style.color='#0d6efd'" href="#"><b>Leer más &rarr;</b></a>                  
                     </div>                  
                 </div>
                                
                 <h2>¿Con qué producto podemos ayudarlo?</h2>
                     <div class="row">
                         <div class="col-md-6">
-                           <img style="margin-bottom: 10px;width:380px;height:200px;border: solid 2px black;" src="assets/img/fortnite.jpg" alt ="fortnite"/>
+                           <img onmouseover="cambioImg(this)" onmouseout="normalImg(this)" style="margin-bottom: 10px;width:380px;height:200px;border: solid 2px black;" src="assets/img/fortnite.jpg" alt ="fortnite"/>
                         </div>
                         <div class="col-md-6">
-                           <img style="margin-bottom: 10px;width:380px;height:200px;border: solid 2px black;" src="assets/img/genshin.jpg" alt ="genshin"/>
+                           <img onmouseover="cambioImg(this)" onmouseout="normalImg(this)" style="margin-bottom: 10px;width:380px;height:200px;border: solid 2px black;" src="assets/img/genshin.jpg" alt ="genshin"/>
                         </div>                        
                     </div>
 
                     <div class="row">
                         <div class="col-md-6">
-                           <img style="margin-bottom: 10px;width:380px;height:200px;border: solid 2px black;" src="assets/img/rocket.jpg" alt ="rocket"/>
+                           <img onmouseover="cambioImg(this)" onmouseout="normalImg(this)" style="margin-bottom: 10px;width:380px;height:200px;border: solid 2px black;" src="assets/img/rocket.jpg" alt ="rocket"/>
                         </div>             
                         <div class="col-md-6">
-                           <img style="margin-bottom: 10px;width:380px;height:200px;border: solid 2px black;" src="assets/img/fall.jpeg" alt ="fall"/>
+                           <img onmouseover="cambioImg(this)" onmouseout="normalImg(this)" style="margin-bottom: 10px;width:380px;height:200px;border: solid 2px black;" src="assets/img/fall.jpeg" alt ="fall"/>
                         </div>                        
                     </div>
 
                     <div class="row">
                         <div class="col">
-                           <img style="width:785px;height:330px;border: solid 2px black;" src="assets/img/apex.jpg" alt ="apex"/>
+                           <img onmouseover="cambioImg2(this)" onmouseout="normalImg2(this)" style="width:785px;height:330px;border: solid 2px black;" src="assets/img/apex.jpg" alt ="apex"/>
                         </div>
                     </div>              
                 </article>
@@ -334,20 +341,24 @@
             
             <div class="aside">
                 <h3>Ayuda</h3>
-                <a href="#"><blockquote>Cuentas</blockquote></a>
-                <a href="#"><blockquote>Pagos</blockquote></a>
-                <a href="#"><blockquote>Ark Games Store</blockquote></a>
-                <a href="#"><blockquote>Técnico</blockquote></a>
-                <a href="#"><blockquote>Comunidad</blockquote></a>
-                <a href="#"><blockquote>Cliente Ark Games</blockquote></a>
-                <a href="#"><blockquote>Intecambios</blockquote></a>
-                <a href="#"><blockquote>Hardware</blockquote></a>
-                <a href="#"><blockquote>Software</blockquote></a>
+                <ul id="categorias">
+                <li><a href="#">Cuentas</a></li>
+                <li><a href="#">Pagos</a></li>
+                <li><a href="#">Ark Games Store</a></li>
+                <li><a href="#">Técnico</a></li>
+                <li><a href="#">Comunidad</a></li>
+                <li><a href="#">Cliente Ark Games</a></li>
+                <li><a href="#">Intecambios</a></li>
+                <li><a href="#">Hardware</a></li>
+                <li><a href="#">Software</a></li>
+                </ul>
             </div>
             
             <div class="bloque_ayuda">
                 <h3>¿No puedes encontrar lo que buscas?</h3>
-                <a href="frmSoporte_EspinozaIvan.html"><blockquote>Obtén ayuda personalizada</blockquote></a>
+                <ul id="ayuda">
+                <li><a href="frmSoporte_EspinozaIvan.html">Obtén ayuda personalizada</a></li>
+                </ul>
             </div>  
         </div>
     <!---------------------------FOOTER------------------------------------------>    
@@ -363,5 +374,6 @@
         <address>Guayaquil, Ecuador </address>
         <p id="derechos_reserv">Derechos Reservados &copy; 2021-2022</p>
     </footer>
+    <script type="text/javascript" src="assets/js/EspinozaIvan.js"> </script>
     </body>   
 </html>
