@@ -44,6 +44,7 @@
 
 .cuadricula-juegos{
 	float: left;
+	width: 90%;
 	padding: 30px;
 	border-radius: 20px;
 	background: rgba(28, 28, 28, 0.6);
@@ -53,7 +54,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-	margin: 0px auto;
+	margin: 0px auto 0px 2%;
 }
 
 .informacion{
@@ -209,4 +210,18 @@ input, select{
 
 .contacto-cliente {
 	width: 65%;
+}
+
+.paginador {
+	grid-column-start: 1;
+	grid-column-end: 4;
+	color: antiquewhite;
+}
+
+.paginador a {
+	text-decoration: none;
+	background: #31B2A0;
+	border-radius: 3px;
+	padding: 2px 15px;
+	color: white;
 }
