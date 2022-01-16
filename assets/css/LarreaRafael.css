@@ -114,6 +114,25 @@ border-radius: 100%;
   border-color: rgb(255, 255, 255) transparent transparent transparent;
 }
 
+.mensajeError { 
+      /* width: 25%; */
+      height: 20px;
+      background-color: rgba(255, 255, 255, 0.945);
+      color: red;
+      text-align: center;
+      border-radius: 8px;
+      border-style: groove;
+      border: #555;
+      padding: 0 8px;
+      position: sticky;
+      z-index: 1;
+      bottom: 100%;
+      margin-top: 4px;
+      align-items: stretch;
+      left: 90%;      
+      display: block;
+}
+
 .showpopup {
   visibility: visible;
   -webkit-animation: fadeIn 1s;

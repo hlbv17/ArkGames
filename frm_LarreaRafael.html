@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="icon" href="assets/img/logo.svg">
   <title>ArkGames</title>
+  
 </head>
 <!-------------------------------------------------MENU---------------------------------------->
 
@@ -37,7 +38,7 @@
 
 
   <div class="formmain">
-    <form>
+    <form id="frmLogIn">
       <div class="contenido">
 
         <header class="cabecera-form">
@@ -52,30 +53,32 @@
             <span class="ingreso-item">
               <i class="fa fa-globe"></i>
             </span>
-            <select class="form-select" id="regiones" required onchange="servidores_ActivarCampos(this);">
+            <select class="form-select" id="regiones" onchange="servidores_ActivarCampos(this);">
               <!--GENERADOS DINAMICANTE-->
             </select>
           </div>
+
           
-          <div class="other" id="divUser"> 
+          <div class="other" id="divUser">
             <span class="ingreso-item">
               <i class="fa fa-user-circle"></i>
-            </span>
-            <input class="form-ingreso" id="txt-ingreso"  type="text" required placeholder="Usuario" name="user"  >
+            </span>            
+            <input class="form-ingreso"  id="txt-ingreso" type="text" placeholder="Usuario" name="user">
+            
           </div>
 
           <div class="other" id="divEmail" style="visibility: collapse; display:none;">
             <span class="ingreso-item">
               <i class="fa fa-envelope-open"></i>
             </span>
-            <input class="form-ingreso" id="email-ingreso" type="email" placeholder="Email" name="email"  >
+            <input class="form-ingreso" id="email-ingreso"  placeholder="Email" name="email">
           </div>
 
           <div class="other">
             <span class="ingreso-item">
               <i class="fa fa-key"></i>
             </span>
-            <input class="form-ingreso" id="password" type="password" placeholder="Password" name="password" required>
+            <input class="form-ingreso" id="password" type="password" placeholder="Password" name="password">
             <span>
               <i class="fa fa-eye" aria-hidden="true" type="button" id="eye_visibilidad"></i>
             </span>
@@ -86,15 +89,15 @@
             </br>
             <label><input type="checkbox" name="ok_sesion"> Recordar sesión?.</label>
           </div>
-          
+
           <div class="other">
-            <button class="log-in"> Ingresar </button>
+            <button class="log-in" type="submit"> Ingresar </button>
           </div>
         </div>
 
         <div class="other">
-          <button class="btn submits frgt-pass" type="button">Olvidó la contraseña?</button>
-          <button class="btn submits sign-up"   type="button" >Registrarse
+          <button class="btn submits frgt-pass" type="button" onclick="formulario_olvidoContrasenia()">Olvidó la contraseña?</button>
+          <button class="btn submits sign-up" type="button" onclick="formulario_redirigir()">Registrarse
             <i class="fa fa-user-plus" aria-hidden="true"></i>
           </button>
         </div>
