@@ -15,6 +15,7 @@ function validar(event) {
     var txtAsunto = document.getElementById("asunto");
     var txtMensaje = document.getElementById("mensaje");
 
+   
     var letra = /^[a-z ,.'-]+$/i;// letras y espacio   
     var correo = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
     var telefono = /^[0-9]{10}$/g;
@@ -103,12 +104,15 @@ function validar(event) {
         mensaje("Esta sección solo debe contener letras y caracteres de puntuación", txtMensaje);
     } 
 
+    
+
    if(!resultado){
         event.preventDefault();
    }
 
 
 }
+
 
 function mensaje(cadenaMensaje, elemento) {
     elemento.focus();

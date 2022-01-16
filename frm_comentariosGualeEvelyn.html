@@ -12,10 +12,9 @@
 
         <style>
             #frm_comentarios{
-                /*display: flex;
-                flex-direction:column;   */            
+                        
                 width: 500px;
-                background: darkgray;
+                background: rgba(28, 28, 28, 0.6);
                 padding: 15px;
                 margin: auto;
                 margin-top: 100px;
@@ -58,6 +57,10 @@
                 color: white;
                 font-size: 16px;
             }
+
+            #btEnviar:hover {                
+                background-color: #4CAF50;
+            }
         </style>
         
     </head>
@@ -86,9 +89,9 @@
                 
                     <fieldset>
 
-                        <legend style="color:darkslategray; font-weight: bold; "><h3>TU OPINION CUENTA!</h2></legend> 
+                        <legend style="color:#31B2A0; font-weight: bold; "><h4>TU OPINION CUENTA!</h4></legend> 
 
-                        <p class="frm_campos" style="text-align: center; font-size: 26px">Ayudanos a seguir mejorando. </p>
+                        <h1 class="frm_campos" style="text-align: center; font-size: 36px">Ayudanos a seguir mejorando. </h1>
 
                         <div class="frm_campos">
 
@@ -141,8 +144,8 @@
                                     <textarea id="mensaje" name="mensaje" placeholder="Escriba aqui su comentario"  cols="70" rows="10"></textarea>
                                 </div>
                                 
-                                <div>
-                                    <input class="botn" type="submit" value="ENVIAR">
+                                <div class="botnes">
+                                    <input class="botn" id="btEnviar" type="submit" value="ENVIAR">
                                     <input class="botn" type="reset" value="CANCELAR">
                                 </div>  
                             </form>                          
