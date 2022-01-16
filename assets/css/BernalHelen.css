@@ -84,6 +84,9 @@ aside {
   height: 200px;
   padding: 70px;
   padding-bottom: 170px;
+}
+
+div[class*="nente"] {
   border-radius: 20px;
   box-shadow: 0px 10px 10px -6px black;
   background-color: #1c1c1c;
