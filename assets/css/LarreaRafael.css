@@ -293,6 +293,15 @@ form .contenido {
   margin: 0 auto;
 	
 }
+
+.other{
+  padding-left: 50px;
+  padding-right: 50px;
+  
+  text-align: center;
+  display: inherit;
+}
+
 .contenido img{
 	    background-color: white;
     padding: 15px;
@@ -324,16 +333,16 @@ form .contenido {
 }
 
 
-.radio-form{
-    margin-top: 10px;
-    margin-left: 0px;
-	margin-right: 0px;
-    text-align: right;
-	padding: 4px 0px;
-    width: 90%;
-    display:block;
+.radio-form{ 
+    text-align: right;  
 	letter-spacing: 0.05em;
 	color: white; 
+
+  padding-top: 5px;
+  padding-left: 60px;
+  padding-right: 50px;
+  
+  text-align: left;
 }
 
 /*box para ingreso*/
@@ -346,6 +355,25 @@ form .contenido {
 	height: 50px;
 }
  
+select[class="form-select"] {
+  width: 250px;
+  height: 50px;
+  box-sizing: border-box;
+  margin-top: 2%;
+  padding: 15px;
+
+  font-size: 16px;
+  font-family: "Abel", sans-serif;
+  color: #5e6472;
+
+  outline: none;
+  border: none;
+
+  border-radius: 0px 5px 5px 0px;
+  transition: 0.2s linear;
+}
+
+
 input[class="form-ingreso"] {
   width: 240px;
   height: 50px;
@@ -370,11 +398,7 @@ input[id="txt-ingreso"] {
 input[id="email-ingreso"] {
   width: 250px;
 	box-sizing: border-box;
-}
-#lst-ingreso {
-   width: 250px;
-	box-sizing: border-box;
-}
+} 
 input:focus {
   transform: translateX(-2px);
   border-radius: 5px;
@@ -422,8 +446,7 @@ button {
 
 .submits {
   width: 48%;
-  display: inline-block;
-  float: left;
+  display: inline-block; 
   margin-left: 2%;
 }
 
