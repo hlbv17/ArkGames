@@ -20,8 +20,7 @@
 
             <nav>
                 <ul>
-                    <li><a href="index.html"><img src="assets/img/home-solid.svg" alt="Home"
-                                class="menu_icon">
+                    <li><a href="index.html"><img src="assets/img/home-solid.svg" alt="Home" class="menu_icon">
                             Home</a></li>
                     <li><a href="BasurtoEdgar.html"><img src="assets/img/store-solid.svg" alt="Tienda"
                                 class="menu_icon">Tienda</a></li>
@@ -40,35 +39,40 @@
         <div class="top">
             <h1 class="title">Confirmación de compra</h1>
         </div>
-            <form method="post" class="form1">
-                <h2>Forma de pago</h2>
-                Campos obligatorios * <br />
-                <h3>Información de contacto </h3>
-                <div class="r">
-                    Apellidos: * <input class="contacto-cliente" type="text"> <br />
-                    Nombres: * <input class="contacto-cliente" type="text"> <br />
-                    E.mail: * <input class="contacto-cliente" type="email"> <br />
-                    Contraseña: * <input class="contacto-cliente" type="password"> <br />
-                </div>
-                <h3> Método de pago </h3>
-                <div class=" from2">
-                    <input type="radio" name="sex"> Débito
-                    <input type="radio" name="sex"> Crédito
-                </div>
-                <div class="c">
-                    Tipo de tarjeta:
-                    <select>
-                        <option selected="selected">Visa</option>
-                        <option> Mastercard </option>
-                        <option> American Express </option>
-                        <option> Alia </option>
-                    </select><br />
-                </div>
-                <div class="r">
-                    Número de tarjeta: * <input type="text"> <br />
-                    <div class="form-group" id="expiration-date">
-                        <label>Fecha de vencimiento:</label>
-                        <select>
+        <form method="post" class="form1" id="frm_compra">
+            <h2>Forma de pago</h2>
+            <h6>Campos obligatorios *</h6>
+            <h3>Información de contacto </h3>
+            <div class="r">
+                <div>Apellidos: * <input class="contacto-cliente" type="text" id="apellidos"> <br /></div>
+                <div>Nombres: * <input class="contacto-cliente" type="text" id="nombres"> <br /></div>
+                <div>E.mail: * <input class="contacto-cliente" type="email" id="email"> <br /></div>
+                <div>Contraseña: * <input class="contacto-cliente" type="password" id="contrasenia"> <br /></div>
+
+            </div>
+            <h3> Método de pago </h3>
+            <div class=" from2">
+                <input type="radio" name="sex"> Débito
+                <input type="radio" name="sex"> Crédito
+            </div>
+            <div class="c">
+                Tipo de tarjeta:
+                <select id="tipoTarjeta">
+                    <option disabled selected value> -- </option>
+                    <option value="Visa">Visa</option>
+                    <option value="Mastercard"> Mastercard </option>
+                    <option value="American Express"> American Express </option>
+                    <option value="Alia"> Alia </option>
+                </select><br />
+            </div>
+            <div class="r">
+                <div>Número de tarjeta: * <input type="text" id="numTarjeta"> <br /></div>
+
+                <div class="form-group" id="expiration-date">
+                    <label>Fecha de vencimiento:</label>
+                    <div style="display: inline;">
+                        <select id="mes">
+                            <option disabled selected value> -- </option>
                             <option value="01">Enero</option>
                             <option value="02">Febrero </option>
                             <option value="03">Marzo</option>
@@ -82,7 +86,10 @@
                             <option value="11">Noviembre</option>
                             <option value="12">Diciembre</option>
                         </select>
-                        <select>
+                    </div>
+                    <div style="display: inline;">
+                        <select id="anio">
+                            <option disabled selected value> -- </option>
                             <option value="16"> 2021</option>
                             <option value="17"> 2022</option>
                             <option value="18"> 2023</option>
@@ -92,10 +99,11 @@
                         </select>
                     </div>
                 </div>
-                <div class="c">
-                    <input class="btnCompra" type="submit" value="Confirmar pago" />
-                </div>
-            </form>
+            </div>
+            <div class="c">
+                <input class="btnCompra" type="submit" value="Confirmar pago" />
+            </div>
+        </form>
     </main>
     <footer>
         <ul class="footer_social">
@@ -115,6 +123,8 @@
         <address>Guayaquil, Ecuador </address>
         <p id="derechos_reserv">Derechos Reservados &copy; 2021-2022</p>
     </footer>
+
+    <script type="text/javascript" src="assets/js/Validacion_frmCompra.js"></script>
 
 </body>
 
