@@ -414,6 +414,10 @@ input[id="txt-ingreso"] {
   width: 250px;
 	box-sizing: border-box;
 }
+input[id="password"] {
+  width: 250px;
+	box-sizing: border-box;
+}
 input[id="email-ingreso"] {
   width: 250px;
 	box-sizing: border-box;
