@@ -80,5 +80,3 @@ setInterval(function(){
     Next();
 }, 5000);
 
-
-/*EFECTO DE CAMBIAR IMG POR CATEGORIA ENCIMA */
